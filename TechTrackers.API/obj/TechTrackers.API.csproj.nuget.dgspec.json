@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\manasoedj\\Music\\TechTrackers.API\\TechTrackers.API\\TechTrackers.API.csproj": {}
+    "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.API\\TechTrackers.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manasoedj\\Music\\TechTrackers.API\\TechTrackers.API\\TechTrackers.API.csproj": {
+    "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.API\\TechTrackers.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manasoedj\\Music\\TechTrackers.API\\TechTrackers.API\\TechTrackers.API.csproj",
+        "projectUniqueName": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.API\\TechTrackers.API.csproj",
         "projectName": "TechTrackers.API",
-        "projectPath": "C:\\Users\\manasoedj\\Music\\TechTrackers.API\\TechTrackers.API\\TechTrackers.API.csproj",
-        "packagesPath": "C:\\Users\\manasoedj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manasoedj\\Music\\TechTrackers.API\\TechTrackers.API\\obj\\",
+        "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.API\\TechTrackers.API.csproj",
+        "packagesPath": "C:\\Users\\nevon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\manasoedj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nevon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,12 +26,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+                "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj"
+              },
+              "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {
+                "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -45,6 +57,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -69,7 +101,169 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+        "projectName": "TechTrackers.Data",
+        "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+        "packagesPath": "C:\\Users\\nevon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nevon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
+        "projectName": "TechTrackers.Service",
+        "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
+        "packagesPath": "C:\\Users\\nevon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nevon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+                "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

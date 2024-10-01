@@ -1,0 +1,15 @@
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\bin\Debug\net8.0\TechTrackers.Data.deps.json
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\bin\Debug\net8.0\TechTrackers.Data.runtimeconfig.json
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\bin\Debug\net8.0\TechTrackers.Data.dll
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\bin\Debug\net8.0\TechTrackers.Data.pdb
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.csproj.AssemblyReference.cache
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.AssemblyInfoInputs.cache
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.AssemblyInfo.cs
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.csproj.CoreCompileInputs.cache
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.sourcelink.json
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.dll
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\refint\TechTrackers.Data.dll
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.pdb
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\TechTrackers.Data.genruntimeconfig.cache
+C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Data\obj\Debug\net8.0\ref\TechTrackers.Data.dll
