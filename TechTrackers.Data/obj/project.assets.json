@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\manasoedj\\.nuget\\packages\\": {}
+    "C:\\Users\\ezram\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manasoedj\\Music\\TechTrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+      "projectUniqueName": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
       "projectName": "TechTrackers.Data",
-      "projectPath": "C:\\Users\\manasoedj\\Music\\TechTrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
-      "packagesPath": "C:\\Users\\manasoedj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manasoedj\\Music\\TechTrackers.API\\TechTrackers.Data\\obj\\",
+      "projectPath": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+      "packagesPath": "C:\\Users\\ezram\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\manasoedj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ezram\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
