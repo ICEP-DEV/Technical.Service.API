@@ -206,5 +206,15 @@ namespace TechTrackers.Service.General
             return true; // Role successfully assigned
         }
 
+        public async Task<User> AddTechnician(User user)
+        {
+            await _dbContext.Users.AddAsync(user);
+            await _dbContext.SaveChangesAsync();
+
+            // Assign the Technician role (role_ID = 4)
+            await AssignRoleToUser(user.User_ID, 4);
+
+            return user;
+        }
     }
 }

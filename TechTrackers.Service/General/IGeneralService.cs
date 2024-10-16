@@ -15,8 +15,12 @@ namespace TechTrackers.Service.General
         Task<Role> UpdateRole(Role role);
         Task<bool> DeleteRole(int id);
 
-        Task<bool> AssignRoleToUser(int userId, int roleId); // New method for assigning a role to a user
-
+        // New method for adding 'technician' to the system.
+        Task<User> AddTechnician(User user);
+        // New method for assigning a role to a user
+        Task<bool> AssignRoleToUser(int userId, int roleId);
+       
+      
 
         // Category methods
         Task<Category> AddCategory(Category category);
@@ -31,6 +35,7 @@ namespace TechTrackers.Service.General
         Task<Department> GetDepartmentById(int id);
         Task<Department> UpdateDepartment(Department department);
         Task<bool> DeleteDepartment(int id);
+
 
 
 

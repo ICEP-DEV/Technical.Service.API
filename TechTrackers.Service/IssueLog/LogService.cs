@@ -110,33 +110,32 @@ namespace TechTrackers.Service.IssueLog
 
         public async Task<bool> AssignLogToTechnician(int logId, int technicianId)
         {
-            // Find the log by logId
             var log = await _techtrackerDbContext.Logs.FindAsync(logId);
 
-            // Check if the log was found
+            // If log is not found, return false
             if (log == null)
             {
-                return false; // Log not found
+                return false;
             }
 
-            // Check if the technician exists and is assigned the "Technician" role
+            // Check if the technician exists and has the role of "Technician"
             var technicianExists = await _techtrackerDbContext.User_Roles
-                .AnyAsync(ur => ur.User_ID == 6 && ur.Role_ID == 2);
+                .AnyAsync(ur => ur.User_ID == technicianId && ur.Role_ID == 4); // Assuming role 4 is for technicians
 
-            // If the technician does not exist or doesn't have the "Technician" role
+            // If the technician is not valid or doesn't exist, return false
             if (!technicianExists)
             {
-                return false; // Technician not found or doesn't have the "Technician" role
+                return false;
             }
 
             // Assign the technician to the log
             log.Technician_ID = technicianId;
-            log.Updated_At = DateTime.UtcNow; // Update the timestamp for when the log was updated
+            log.Updated_At = DateTime.UtcNow; // Update the timestamp
 
-            // Save the changes to the database
+            // Save the changes
             await _techtrackerDbContext.SaveChangesAsync();
 
-            return true; // Successfully assigned
+            return true;
         }
 
 

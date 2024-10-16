@@ -241,7 +241,7 @@ namespace TechTrackers.API.Controllers
                 Message = "Unable to assign log"
             };
 
-            // Use DTO properties
+            // Use the service layer to assign the technician
             var isAssigned = await _logService.AssignLogToTechnician(logAssignmentDto.Log_ID, logAssignmentDto.Technician_ID);
 
             if (isAssigned)

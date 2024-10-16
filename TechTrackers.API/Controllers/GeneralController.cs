@@ -445,6 +445,30 @@ namespace TechTrackers.API.Controllers
             }
         }
 
+        [HttpPost]
+        public async Task<IActionResult> AddTechnician([FromBody] User user)
+        {
+            var responseWrapper = new RespondWrapper
+            {
+                IsSuccess = false,
+                Message = "Unable to add technician"
+            };
+
+            var addedTechnician = await _generalService.AddTechnician(user);
+
+            if (addedTechnician != null)
+            {
+                responseWrapper = new RespondWrapper
+                {
+                    IsSuccess = true,
+                    Message = "Technician added successfully",
+                    Result = addedTechnician
+                };
+            }
+
+            return Ok(responseWrapper);
+        }
+
 
     }
 }
