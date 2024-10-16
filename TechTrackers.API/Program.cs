@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using TechTrackers.Data;
 using TechTrackers.Service;
+using TechTrackers.Service.Authorization;
+using TechTrackers.Service.General;
+using TechTrackers.Service.IssueLog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +26,14 @@ builder.Services.AddSwaggerGen();
 //Configure service and add contextDB
 builder.Services.AddScoped<TeckTrackersDbContext, TeckTrackersDbContext>();
 builder.Services.AddScoped<ITechTrackerService, TechTrackerService>();
+
+//Lunga
+builder.Services.AddScoped<ILogService, LogService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+
+builder.Services.AddScoped<IGeneralService, GeneralService>();
+
+
 
 var app = builder.Build();
 app.UseCors("corspolicy");

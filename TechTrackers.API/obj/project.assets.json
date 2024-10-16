@@ -46,6 +46,19 @@
           }
         }
       },
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1594,6 +1607,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
@@ -1661,6 +1675,37 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.0.3.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/net5.0/BCrypt.Net-Next.dll",
+        "lib/net5.0/BCrypt.Net-Next.xml",
+        "lib/net6.0/BCrypt.Net-Next.dll",
+        "lib/net6.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -4564,24 +4609,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nevon\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\222883750\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.API\\TechTrackers.API.csproj",
+      "projectUniqueName": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.API\\TechTrackers.API.csproj",
       "projectName": "TechTrackers.API",
-      "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.API\\TechTrackers.API.csproj",
-      "packagesPath": "C:\\Users\\nevon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.API\\obj\\",
+      "projectPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.API\\TechTrackers.API.csproj",
+      "packagesPath": "C:\\Users\\222883750\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\nevon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\222883750\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4589,18 +4629,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
-              "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj"
+            "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+              "projectPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj"
             },
-            "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {
-              "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj"
+            "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {
+              "projectPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj"
             }
           }
         }
@@ -4664,7 +4703,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

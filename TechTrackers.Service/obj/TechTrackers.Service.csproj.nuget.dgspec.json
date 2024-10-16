@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {}
+    "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+    "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+        "projectUniqueName": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
         "projectName": "TechTrackers.Data",
-        "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
-        "packagesPath": "C:\\Users\\nevon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\obj\\",
+        "projectPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+        "packagesPath": "C:\\Users\\222883750\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nevon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\222883750\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -87,25 +86,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {
+    "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
+        "projectUniqueName": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
         "projectName": "TechTrackers.Service",
-        "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
-        "packagesPath": "C:\\Users\\nevon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Service\\obj\\",
+        "projectPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
+        "packagesPath": "C:\\Users\\222883750\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nevon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\222883750\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,15 +108,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
-                "projectPath": "C:\\Users\\nevon\\source\\repos\\ICEP-DEV\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj"
+              "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+                "projectPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj"
               }
             }
           }
@@ -162,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
