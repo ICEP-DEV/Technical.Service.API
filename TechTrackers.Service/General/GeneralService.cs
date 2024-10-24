@@ -208,13 +208,29 @@ namespace TechTrackers.Service.General
 
         public async Task<User> AddTechnician(User user)
         {
-            await _dbContext.Users.AddAsync(user);
+            /*await _dbContext.Users.AddAsync(user);
             await _dbContext.SaveChangesAsync();
 
             // Assign the Technician role (role_ID = 4)
             await AssignRoleToUser(user.User_ID, 4);
 
+            return user;*/
+
+            var defaultRole = await _dbContext.Roles.FirstOrDefaultAsync(r => r.Role_Name == "Technician");
+
+            if (defaultRole == null)
+            {
+                throw new Exception("Technician Role not found!!!");
+            }
+
+            user.Role_ID = defaultRole.Role_ID;
+
+            await _dbContext.Users.AddAsync(user);
+            await _dbContext.SaveChangesAsync();
+
             return user;
+
         }
+
     }
 }

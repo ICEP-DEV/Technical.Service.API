@@ -18,6 +18,7 @@ namespace TechTrackers.Service.General
         // New method for adding 'technician' to the system.
         Task<User> AddTechnician(User user);
         // New method for assigning a role to a user
+
         Task<bool> AssignRoleToUser(int userId, int roleId);
        
       

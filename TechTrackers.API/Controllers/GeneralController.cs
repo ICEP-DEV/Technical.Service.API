@@ -439,16 +439,16 @@ namespace TechTrackers.API.Controllers
             {
                 return StatusCode(500, new RespondWrapper
                 {
-                    IsSuccess = false,
+                    IsSuccess = false,  
                     Message = ex + "An error occurred while assigning the role"
                 });
             }
         }
 
-        [HttpPost]
+        [HttpPost("AddTechnician")]
         public async Task<IActionResult> AddTechnician([FromBody] User user)
         {
-            var responseWrapper = new RespondWrapper
+            /*var responseWrapper = new RespondWrapper
             {
                 IsSuccess = false,
                 Message = "Unable to add technician"
@@ -466,9 +466,41 @@ namespace TechTrackers.API.Controllers
                 };
             }
 
+            return Ok(responseWrapper);*/
+
+
+            var responseWrapper = new RespondWrapper
+            {
+                IsSuccess = false,
+                Message = "Unable to add technician."
+            };
+
+            // Validate incoming data
+            if (user == null)
+            {
+                responseWrapper.Message = "User data cannot be null.";
+                return BadRequest(responseWrapper);
+            }
+
+            // Call service to add technician and assign the role automatically
+            var addedTechnician = await _generalService.AddTechnician(user);
+
+            if (addedTechnician != null)
+            {
+                responseWrapper = new RespondWrapper
+                {
+                    IsSuccess = true,
+                    Message = "Technician Added Successfully!!",
+                    Result = addedTechnician
+                };
+            }
+
             return Ok(responseWrapper);
         }
 
 
     }
-}
+
+
+    }
+

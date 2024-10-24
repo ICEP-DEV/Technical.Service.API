@@ -119,8 +119,10 @@ namespace TechTrackers.Service.IssueLog
             }
 
             // Check if the technician exists and has the role of "Technician"
+
             var technicianExists = await _techtrackerDbContext.User_Roles
-                .AnyAsync(ur => ur.User_ID == technicianId && ur.Role_ID == 4); // Assuming role 4 is for technicians
+                .AnyAsync(ur => ur.User_ID == technicianId && ur.Role_ID == 4);
+
 
             // If the technician is not valid or doesn't exist, return false
             if (!technicianExists)
