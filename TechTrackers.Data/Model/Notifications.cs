@@ -13,7 +13,9 @@ namespace TechTrackers.Data.Model
         private DateTime timestamp;
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Notification_ID { get; set; }
+
         [ForeignKey("Log")]
         public int Log_ID { get; set; }
         [ForeignKey("User")]

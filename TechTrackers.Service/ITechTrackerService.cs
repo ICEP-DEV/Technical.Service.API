@@ -16,7 +16,5 @@ namespace TechTrackers.Service
         IEnumerable<User> GetUsers();
 
         //Notifications
-        Task<Notifications> SendNotification(Notifications notifications);
-        IEnumerable<Notifications> GetNotification();
     }
 }

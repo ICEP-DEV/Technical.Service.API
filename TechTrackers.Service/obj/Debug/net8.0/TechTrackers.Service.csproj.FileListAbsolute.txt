@@ -14,6 +14,24 @@ C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Service\obj\D
 C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Data.dll
 C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Data.pdb
 C:\Users\nevon\Source\Repos\ICEP-DEV\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrac.1215D5EB.Up2Date
+<<<<<<< HEAD
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.deps.json
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.dll
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.pdb
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Data.dll
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Data.pdb
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.csproj.AssemblyReference.cache
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.AssemblyInfoInputs.cache
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.AssemblyInfo.cs
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.csproj.CoreCompileInputs.cache
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.sourcelink.json
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrac.1215D5EB.Up2Date
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.dll
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\refint\TechTrackers.Service.dll
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.pdb
+C:\Users\ezram\Desktop\ICEP-Projects\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\ref\TechTrackers.Service.dll
+=======
 C:\Users\222883750\source\Techtracker.BackEndDev\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.deps.json
 C:\Users\222883750\source\Techtracker.BackEndDev\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.dll
 C:\Users\222883750\source\Techtracker.BackEndDev\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.pdb
@@ -30,3 +48,4 @@ C:\Users\222883750\source\Techtracker.BackEndDev\Techtrackers.API\TechTrackers.S
 C:\Users\222883750\source\Techtracker.BackEndDev\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\refint\TechTrackers.Service.dll
 C:\Users\222883750\source\Techtracker.BackEndDev\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.pdb
 C:\Users\222883750\source\Techtracker.BackEndDev\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\ref\TechTrackers.Service.dll
+>>>>>>> fba63d8d4b34c85b9368550f59bb012d92a94355

@@ -11,13 +11,16 @@ namespace TechTrackers.Data.Model
     public class Log_chat
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Log_Chat_ID { get; set; }
+
         [ForeignKey("Log")]
         public int Log_ID { get; set; }
+
         [ForeignKey("User")]
         public int Sender_ID { get; set; }
         public string Message { get; set; } = string.Empty;
-        public DateTime Timestamp { get; set; }
+        public DateTime Timestamp { get; set; } = DateTime.Now;
 
     }
 }

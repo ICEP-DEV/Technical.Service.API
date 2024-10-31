@@ -11,7 +11,7 @@ using TechTrackers.Data;
 
 namespace TechTrackers.Data.Migrations
 {
-    [DbContext(typeof(TeckTrackersDbContext))]
+    [DbContext(typeof(TechTrackersDbContext))]
     [Migration("20240926105434_second-database")]
     partial class seconddatabase
     {

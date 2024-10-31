@@ -5,9 +5,9 @@ namespace TechTrackers.Service
 {
     public class TechTrackerService : ITechTrackerService
     {
-        private readonly TeckTrackersDbContext _dbContext;
+        private readonly TechTrackersDbContext _dbContext;
 
-        public TechTrackerService(TeckTrackersDbContext dbContext)
+        public TechTrackerService(TechTrackersDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -26,17 +26,6 @@ namespace TechTrackers.Service
 
 
         //Notification
-        public async Task<Notifications> SendNotification(Notifications notifications)
-        {
-            await _dbContext.Notifications.AddAsync(notifications);
-            await _dbContext.SaveChangesAsync();
-            return notifications;
-        }
-
-        public IEnumerable<Notifications> GetNotification()
-        {
-            return _dbContext.Notifications.ToList();
-        }
 
     }
 }

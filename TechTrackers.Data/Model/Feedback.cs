@@ -11,14 +11,17 @@ namespace TechTrackers.Data.Model
     public class Feedback
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Feedback_ID { get; set; }
+
         [ForeignKey("Log")]
         public int Log_ID { get; set; }
+
         [ForeignKey("User")]
         public int User_ID { get; set; }
         public int Rating { get; set; }
         public string Comment { get; set; } = string.Empty;
-        public DateTime Timestamp { get; set; }
+        public DateTime Timestamp { get; set; } = DateTime.Now;
 
 
     }

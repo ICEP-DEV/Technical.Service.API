@@ -1,5 +1,32 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "WorkspaceRootPath": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\desktop\\icep-projects\\techtrackers.api\\techtrackers.data\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\desktop\\icep-projects\\techtrackers.api\\techtrackers.data\\model\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\desktop\\icep-projects\\techtrackers.api\\techtrackers.data\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\desktop\\icep-projects\\techtrackers.api\\techtrackers.data\\model\\user_role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\user_role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\desktop\\icep-projects\\techtrackers.api\\techtrackers.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\ezram\\desktop\\icep-projects\\techtrackers.api\\techtrackers.service\\userlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\userlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
   "WorkspaceRootPath": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\",
   "Documents": [
     {
@@ -109,6 +136,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\Model\\dto\\RoleAssignmentDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechTrackers.Data\\Model\\dto\\RoleAssignmentDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> fba63d8d4b34c85b9368550f59bb012d92a94355
     }
   ],
   "DocumentGroupContainers": [
@@ -118,14 +146,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\Model\\Log.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\Log.cs",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\Model\\Log.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\Log.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T05:06:01.595Z",
+=======
               "DocumentIndex": 26,
               "Title": "RoleAssignmentDTO.cs",
               "DocumentMoniker": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\Model\\dto\\RoleAssignmentDTO.cs",
@@ -195,11 +230,73 @@
               "ViewState": "AQIAANcBAAAAAAAAAAAewN4BAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T11:04:59.186Z",
+>>>>>>> fba63d8d4b34c85b9368550f59bb012d92a94355
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\Model\\Role.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\Role.cs",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\Model\\Role.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T05:05:58.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User_Role.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\Model\\User_Role.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\User_Role.cs",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\Model\\User_Role.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\User_Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T05:05:41.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\Model\\User.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\Model\\User.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\User.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA7wBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T02:24:23.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwC8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:14:27.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserLogService.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Service\\UserLogService.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\UserLogService.cs",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Service\\UserLogService.cs",
+              "RelativeToolTip": "TechTrackers.Service\\UserLogService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAswEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:13:48.725Z"
+=======
               "Title": "IGeneralService.cs",
               "DocumentMoniker": "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Service\\General\\IGeneralService.cs",
               "RelativeDocumentMoniker": "TechTrackers.Service\\General\\IGeneralService.cs",
@@ -454,6 +551,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T22:22:37.749Z"
+>>>>>>> fba63d8d4b34c85b9368550f59bb012d92a94355
             }
           ]
         }

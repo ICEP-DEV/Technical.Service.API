@@ -10,7 +10,7 @@ using TechTrackers.Data;
 
 namespace TechTrackers.Data.Migrations
 {
-    [DbContext(typeof(TeckTrackersDbContext))]
+    [DbContext(typeof(TechTrackersDbContext))]
     partial class TeckTrackersDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -97,6 +97,9 @@ namespace TechTrackers.Data.Migrations
                     b.Property<int>("Log_ID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("Log_ID1")
+                        .HasColumnType("int");
+
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
@@ -107,6 +110,8 @@ namespace TechTrackers.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Feedback_ID");
+
+                    b.HasIndex("Log_ID1");
 
                     b.ToTable("Feed_back");
                 });
@@ -119,8 +124,9 @@ namespace TechTrackers.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Log_ID"));
 
-                    b.Property<DateTime>("Assigned_At")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Assigned_At")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Assigned_By")
                         .HasColumnType("int");
@@ -130,6 +136,9 @@ namespace TechTrackers.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Category_ID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Category_ID1")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Created_At")
@@ -162,7 +171,29 @@ namespace TechTrackers.Data.Migrations
                     b.Property<DateTime>("Updated_At")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("User_ID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("User_ID1")
+                        .HasColumnType("int");
+
                     b.HasKey("Log_ID");
+
+                    b.HasIndex("Assigned_By");
+
+                    b.HasIndex("Category_ID");
+
+                    b.HasIndex("Category_ID1");
+
+                    b.HasIndex("SLA_ID");
+
+                    b.HasIndex("Staff_ID");
+
+                    b.HasIndex("Technician_ID");
+
+                    b.HasIndex("User_ID");
+
+                    b.HasIndex("User_ID1");
 
                     b.ToTable("Logs");
                 });
@@ -178,6 +209,9 @@ namespace TechTrackers.Data.Migrations
                     b.Property<int>("Log_ID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("Log_ID1")
+                        .HasColumnType("int");
+
                     b.Property<string>("Message")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -189,6 +223,8 @@ namespace TechTrackers.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Log_Chat_ID");
+
+                    b.HasIndex("Log_ID1");
 
                     b.ToTable("Log_chats");
                 });
@@ -207,6 +243,9 @@ namespace TechTrackers.Data.Migrations
                     b.Property<int>("Log_ID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("Log_ID1")
+                        .HasColumnType("int");
+
                     b.Property<string>("Log_Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -215,6 +254,8 @@ namespace TechTrackers.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Log_Status_History_ID");
+
+                    b.HasIndex("Log_ID1");
 
                     b.ToTable("Log_status_histor");
                 });
@@ -272,7 +313,7 @@ namespace TechTrackers.Data.Migrations
                     b.ToTable("Roles");
                 });
 
-            modelBuilder.Entity("TechTrackers.Data.Model.Service_level_agreement", b =>
+            modelBuilder.Entity("TechTrackers.Data.Model.SLA", b =>
                 {
                     b.Property<int>("SLA_ID")
                         .ValueGeneratedOnAdd()
@@ -331,7 +372,34 @@ namespace TechTrackers.Data.Migrations
 
                     b.HasKey("User_ID");
 
+                    b.HasIndex("Department_ID");
+
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.UserOtp", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Expiration")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsValid")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("OtpCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserOtps");
                 });
 
             modelBuilder.Entity("TechTrackers.Data.Model.User_Role", b =>
@@ -350,7 +418,145 @@ namespace TechTrackers.Data.Migrations
 
                     b.HasKey("User_Role_ID");
 
+                    b.HasIndex("Role_ID");
+
+                    b.HasIndex("User_ID");
+
                     b.ToTable("User_Roles");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.Feedback", b =>
+                {
+                    b.HasOne("TechTrackers.Data.Model.Log", null)
+                        .WithMany("Feedbacks")
+                        .HasForeignKey("Log_ID1");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.Log", b =>
+                {
+                    b.HasOne("TechTrackers.Data.Model.User", "AssignedByUser")
+                        .WithMany()
+                        .HasForeignKey("Assigned_By")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("TechTrackers.Data.Model.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("Category_ID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("TechTrackers.Data.Model.Category", null)
+                        .WithMany("Logs")
+                        .HasForeignKey("Category_ID1");
+
+                    b.HasOne("TechTrackers.Data.Model.SLA", "SLA")
+                        .WithMany("Logs")
+                        .HasForeignKey("SLA_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TechTrackers.Data.Model.User", "Staff")
+                        .WithMany()
+                        .HasForeignKey("Staff_ID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("TechTrackers.Data.Model.User", "Technician")
+                        .WithMany()
+                        .HasForeignKey("Technician_ID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("TechTrackers.Data.Model.User", null)
+                        .WithMany("AssignedLogs")
+                        .HasForeignKey("User_ID");
+
+                    b.HasOne("TechTrackers.Data.Model.User", null)
+                        .WithMany("CreatedLogs")
+                        .HasForeignKey("User_ID1");
+
+                    b.Navigation("AssignedByUser");
+
+                    b.Navigation("Category");
+
+                    b.Navigation("SLA");
+
+                    b.Navigation("Staff");
+
+                    b.Navigation("Technician");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.Log_chat", b =>
+                {
+                    b.HasOne("TechTrackers.Data.Model.Log", null)
+                        .WithMany("LogChats")
+                        .HasForeignKey("Log_ID1");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.Log_status_history", b =>
+                {
+                    b.HasOne("TechTrackers.Data.Model.Log", null)
+                        .WithMany("LogStatusHistories")
+                        .HasForeignKey("Log_ID1");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.User", b =>
+                {
+                    b.HasOne("TechTrackers.Data.Model.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("Department_ID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Department");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.User_Role", b =>
+                {
+                    b.HasOne("TechTrackers.Data.Model.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("Role_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TechTrackers.Data.Model.User", "User")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("User_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.Category", b =>
+                {
+                    b.Navigation("Logs");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.Log", b =>
+                {
+                    b.Navigation("Feedbacks");
+
+                    b.Navigation("LogChats");
+
+                    b.Navigation("LogStatusHistories");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.SLA", b =>
+                {
+                    b.Navigation("Logs");
+                });
+
+            modelBuilder.Entity("TechTrackers.Data.Model.User", b =>
+                {
+                    b.Navigation("AssignedLogs");
+
+                    b.Navigation("CreatedLogs");
+
+                    b.Navigation("UserRoles");
                 });
 #pragma warning restore 612, 618
         }

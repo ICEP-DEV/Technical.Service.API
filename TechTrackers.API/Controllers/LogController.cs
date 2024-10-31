@@ -1,5 +1,72 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
+using TechTrackers.Service;
+using TechTrackers.Data.Model;
+using TechTrackers.Data.Model.dto;
+
+namespace TechTrackers.API.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]/[action]")]
+    [EnableCors("corspolicy")]
+    public class LogController : ControllerBase
+    {
+        private readonly LogService _logService;
+        private readonly ILogger<LogController> _logger;
+
+        public LogController(LogService logService, ILogger<LogController> logger)
+        {
+            _logService = logService;
+            _logger = logger;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateLog([FromBody] LogDto logDto)
+        {
+            try
+            {
+                int staffId = logDto.Staff_ID;  // Ensure staffId is extracted
+                var log = await _logService.LogIssue(staffId, logDto);
+                return Ok(log);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                _logger.LogError(ex, "Key not found while creating log.");
+                return NotFound(new { message = ex.Message });
+            }
+            catch (InvalidOperationException ex)
+            {
+                _logger.LogError(ex, "Invalid operation while creating log.");
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error: {ex.Message}"); // Log the main error
+                if (ex.InnerException != null)
+                {
+                    // Log the inner exception if available
+                    _logger.LogError($"Inner Exception: {ex.InnerException.Message}");
+                }
+                return StatusCode(500, new { message = "An internal server error occurred." });
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<LogDetailDto>>> GetLogs()
+        {
+            try
+            {
+                var logs = await _logService.GetAllLogsAsync();
+                return Ok(logs);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while retrieving logs.");
+                return StatusCode(500, new { message = "An internal server error occurred." });
+            }
+        }
+=======
 using TechTrackers.Data.Model;
 using TechTrackers.Data.Model.dto;
 using TechTrackers.Service.IssueLog;
@@ -316,5 +383,6 @@ namespace TechTrackers.API.Controllers
 
 
 
+>>>>>>> fba63d8d4b34c85b9368550f59bb012d92a94355
     }
 }

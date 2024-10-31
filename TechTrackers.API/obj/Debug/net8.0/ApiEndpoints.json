@@ -1,5 +1,131 @@
 [
   {
+    "ContainingType": "TechTrackers.API.Controllers.AccountController",
+    "Method": "RequestOtp",
+    "RelativePath": "api/Account/RequestOtp/request-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TechTrackers.Data.Model.dto.RequestOtpDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.AccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Account/ResetPassword/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TechTrackers.Data.Model.dto.ResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.FeedbackController",
+    "Method": "GetFeedbackByLog",
+    "RelativePath": "api/Feedback/GetFeedbackByLog/{logId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.FeedbackController",
+    "Method": "SubmitFeedback",
+    "RelativePath": "api/Feedback/SubmitFeedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feedbackDto",
+        "Type": "TechTrackers.Data.Model.dto.FeedbackDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.LogController",
+    "Method": "CreateLog",
+    "RelativePath": "api/Log/CreateLog",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logDto",
+        "Type": "TechTrackers.Data.Model.dto.LogDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.LogController",
+    "Method": "GetLogs",
+    "RelativePath": "api/Log/GetLogs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TechTrackers.Data.Model.dto.LogDetailDto, TechTrackers.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.NotificationController",
+    "Method": "Notify",
+    "RelativePath": "api/Notification/Notify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notifications",
+        "Type": "TechTrackers.Data.Model.Notifications",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.NotificationController",
+    "Method": "ReceiveNotification",
+    "RelativePath": "api/Notification/ReceiveNotification",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TechTrackers.API.Controllers.TechTrackersController",
     "Method": "AddUser",
     "RelativePath": "api/TechTrackers/AddUser",
@@ -26,29 +152,19 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TechTrackers.API.Controllers.TechTrackersController",
-    "Method": "Notify",
-    "RelativePath": "api/TechTrackers/Notify",
+    "ContainingType": "TechTrackers.API.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "notifications",
-        "Type": "TechTrackers.Data.Model.Notifications",
+        "Name": "loginDto",
+        "Type": "TechTrackers.API.Controllers.LoginDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TechTrackers.API.Controllers.TechTrackersController",
-    "Method": "RecieveNotification",
-    "RelativePath": "api/TechTrackers/RecieveNotification",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {

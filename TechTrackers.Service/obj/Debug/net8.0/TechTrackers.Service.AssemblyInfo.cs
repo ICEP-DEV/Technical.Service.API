@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechTrackers.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3eb9f86adc64f87bebbd735199195e645e7094b")]
+=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79bed6494068b788ab5b07a4fa5c56ddc0ca8562")]
+>>>>>>> fba63d8d4b34c85b9368550f59bb012d92a94355
 [assembly: System.Reflection.AssemblyProductAttribute("TechTrackers.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechTrackers.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

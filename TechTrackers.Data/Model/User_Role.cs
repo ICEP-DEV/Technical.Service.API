@@ -11,11 +11,16 @@ namespace TechTrackers.Data.Model
     public class User_Role
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int User_Role_ID { get; set; }
+
         [ForeignKey("User")]
         public int User_ID { get; set; }
+        public User? User { get; set; }
+
         [ForeignKey("Role")]
         public int Role_ID { get; set; }
+        public Role? Role { get; set; }
 
     }
 }

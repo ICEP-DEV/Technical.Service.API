@@ -21,20 +21,21 @@ namespace TechTrackers.API.Controllers
         [HttpPost]
         public async Task<IActionResult> AddUser([FromBody] User user)
         {
-            var respondWrapper = new RespondWrapper {
+            var respondWrapper = new RespondWrapper
+            {
                 IsSuccess = false,
                 Message = "Unable to add user."
             };
 
-            var results = await _techTrackerService.RegisterUser(user);
+            var result = await _techTrackerService.RegisterUser(user);
 
-            if (results != null)
+            if (result != null)
             {
                 respondWrapper = new RespondWrapper
                 {
                     IsSuccess = true,
                     Message = "User successfully registered.",
-                    Result = results
+                    Result = result
                 };
             }
 
@@ -42,9 +43,9 @@ namespace TechTrackers.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetUser() 
+        public IActionResult GetUser()
         {
-            var respondWrapper = new RespondWrapper 
+            var respondWrapper = new RespondWrapper
             {
                 IsSuccess = false,
                 Message = "Unable to fetch user."
@@ -52,61 +53,12 @@ namespace TechTrackers.API.Controllers
 
             var results = _techTrackerService.GetUsers();
 
-            if(results.Count() > 0)
-            {
-                respondWrapper = new RespondWrapper()
-                {
-                    IsSuccess = true,
-                    Message = "User successfully retrieved.",
-                    Result = results
-                };
-            }
-
-            return Ok(respondWrapper);
-        }
-
-        //Notifications
-        [HttpPost]
-        public async Task<IActionResult> Notify([FromBody] Notifications notifications)
-        {
-            var respondWrapper = new RespondWrapper
-            {
-                IsSuccess = false,
-                Message = "Unable to send notification."
-            };
-
-            var results = await _techTrackerService.SendNotification(notifications);
-
-            if (results != null)
+            if (results.Any())
             {
                 respondWrapper = new RespondWrapper
                 {
                     IsSuccess = true,
-                    Message = "Notification sent.",
-                    Result = results
-                };
-            }
-
-            return Ok(respondWrapper);
-        }
-
-        [HttpGet]
-        public IActionResult RecieveNotification()
-        {
-            var respondWrapper = new RespondWrapper
-            {
-                IsSuccess = false,
-                Message = "Unable to fetch notification."
-            };
-
-            var results = _techTrackerService.GetNotification();
-
-            if (results.Count() > 0)
-            {
-                respondWrapper = new RespondWrapper()
-                {
-                    IsSuccess = true,
-                    Message = "1 new notification recieved.",
+                    Message = "User successfully retrieved.",
                     Result = results
                 };
             }

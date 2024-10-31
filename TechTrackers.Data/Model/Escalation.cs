@@ -11,12 +11,15 @@ namespace TechTrackers.Data.Model
     public class Escalation
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Escalation_ID { get; set; }
+
         [ForeignKey("Log")]
         public int Log_ID { get; set; }
+
         [ForeignKey("User")]
         public int HOD_ID { get; set; }
         public string Reason { get; set; } = string.Empty;
-        public DateTime Timestamp { get; set; }
+        public DateTime Timestamp { get; set; } = DateTime.Now;
     }
 }

@@ -1,6 +1,22 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+        "projectName": "TechTrackers.Data",
+        "projectPath": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+        "packagesPath": "C:\\Users\\ezram\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ezram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
     "C:\\Users\\222883750\\source\\Techtracker.BackEndDev\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {}
   },
   "projects": {
@@ -15,6 +31,7 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\222883750\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> fba63d8d4b34c85b9368550f59bb012d92a94355
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
