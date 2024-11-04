@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using TechTrackers.Data;
 using TechTrackers.Service;
+using TechTrackers.Service.AdminService;
+using TechTrackers.Service.General;
 using TechTrackers.Service.Services;
 
 
@@ -32,6 +34,13 @@ builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IOTPService, OTPService>();
 builder.Services.AddScoped<IUserService, UserOtpService>();
+
+//Lunga
+builder.Services.AddScoped<IGeneralService, GeneralService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
+
+
+
 
 var app = builder.Build();
 app.UseCors("corspolicy");
