@@ -32,6 +32,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TechTrackers.API.Controllers.AddUserController",
+    "Method": "AddUser",
+    "RelativePath": "api/AddUser/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TechTrackers.Data.Model.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.AddUserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/AddUser/DeleteUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.AddUserController",
+    "Method": "GetUser",
+    "RelativePath": "api/AddUser/GetUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.AddUserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/AddUser/GetUserById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.AddUserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/AddUser/UpdateUser/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "TechTrackers.Data.Model.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TechTrackers.API.Controllers.FeedbackController",
     "Method": "GetFeedbackByLog",
     "RelativePath": "api/Feedback/GetFeedbackByLog/{logId}",
