@@ -35,6 +35,7 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IOTPService, OTPService>();
 builder.Services.AddScoped<IUserService, UserOtpService>();
 
+
 //Nicole
 builder.Services.AddScoped<IAddUserService, AddUserService>();
 

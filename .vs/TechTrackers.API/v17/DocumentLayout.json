@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\nevon\\Desktop\\TestingAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\nevon\\desktop\\testingapi\\techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\nevon\\desktop\\testingapi\\techtrackers.api\\controllers\\addusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\addusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\nevon\\desktop\\testingapi\\techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\nevon\\desktop\\testingapi\\techtrackers.service\\adduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\adduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -69,8 +69,12 @@
           "SelectedChildIndex": 10,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "NotificationController.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.API\\Controllers\\NotificationController.cs",
               "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\NotificationController.cs",
@@ -83,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Service\\NotificationService.cs",
               "RelativeDocumentMoniker": "TechTrackers.Service\\NotificationService.cs",
@@ -96,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "INotificationServicecs.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Service\\INotificationServicecs.cs",
               "RelativeDocumentMoniker": "TechTrackers.Service\\INotificationServicecs.cs",
@@ -109,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Data\\Model\\User.cs",
               "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\User.cs",
@@ -122,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Notification.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Data\\Model\\Notification.cs",
               "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\Notification.cs",
@@ -135,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SLA.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Data\\Model\\SLA.cs",
               "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\SLA.cs",
@@ -148,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.API\\appsettings.json",
               "RelativeDocumentMoniker": "TechTrackers.API\\appsettings.json",
@@ -187,20 +191,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.API\\Program.cs",
               "RelativeDocumentMoniker": "TechTrackers.API\\Program.cs",
               "ToolTip": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.API\\Program.cs",
               "RelativeToolTip": "TechTrackers.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:05:46.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AddUserController.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.API\\Controllers\\AddUserController.cs",
               "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\AddUserController.cs",
@@ -213,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\UserController.cs",
