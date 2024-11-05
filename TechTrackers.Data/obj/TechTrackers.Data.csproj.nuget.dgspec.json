@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {}
+    "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Data\\TechTrackers.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+    "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Data\\TechTrackers.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+        "projectUniqueName": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Data\\TechTrackers.Data.csproj",
         "projectName": "TechTrackers.Data",
-        "projectPath": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
-        "packagesPath": "C:\\Users\\ezram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.Data\\obj\\",
+        "projectPath": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Data\\TechTrackers.Data.csproj",
+        "packagesPath": "C:\\Users\\nevon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nevon\\Desktop\\TestingAPI\\TechTrackers.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ezram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nevon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
