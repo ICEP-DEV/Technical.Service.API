@@ -15,28 +15,60 @@ namespace TechTrackers.Service
         }
 
         // Method to fetch all the logs
-        public async Task<IEnumerable<LogDetailDto>> GetAllLogsAsync()
+        private string GetDepartmentInitials(string departmentName, int logId)
+        {
+            if (string.IsNullOrEmpty(departmentName))
+                return $"LOG-{logId:D3}";
+
+            // Extract initials by taking the first letter of each word
+            var initials = string.Join("", departmentName.Split(' ').Select(word => word[0])).ToUpper();
+            return $"{initials}-{logId:D3}";
+        }
+        public async Task<IEnumerable<LogDetailDto>> GetAllLogsAsync(int? userId)
         {
 
-            return await _dbContext.Logs
-               .Include(log => log.Staff)
-               .ThenInclude(staff => staff.Department)
-               .Include(log => log.Technician)
-               .Include(log => log.Category) // Include the log's category
-               .Select(log => new LogDetailDto
-               {
-                   IssueId = $"{log.Staff.Department.DepartmentName}-{log.LogId}",  // Simple Log ID format
-                   CategoryName = log.Category.CategoryName,
-                   IssuedAt = log.CreatedAt,
-                   Priority = log.Priority,
-                   Department = log.Staff != null ? log.Staff.Department.DepartmentName : null, // Staff's department
-                   Status = log.LogStatus,
-                   Description = log.Description,
-                   Location = log.Location,
-                   AttachmentUrl = log.AttachmentUrl,
-                   AssignedTo = log.Technician != null ? $"{log.Technician.Initials} {log.Technician.Surname}" : "Unassigned" // Display technician's name
-               })
-               .ToListAsync();
+            try
+            {
+                var query = _dbContext.Logs
+                    .Include(log => log.Staff)
+                    .ThenInclude(staff => staff.Department)
+                    .Include(log => log.Technician)
+                    .Include(log => log.Category)
+                    .AsQueryable();
+
+                if(userId.HasValue)
+                {
+                    query = query.Where(log => log.StaffId == userId.Value);
+                }
+
+                var logs = await query.ToListAsync();
+
+                // Transform the data after fetching it
+                var logDetails = logs.Select(log => new LogDetailDto
+                {
+                    IssueId = GetDepartmentInitials(log.Staff?.Department?.DepartmentName, log.LogId),
+                    CategoryName = log.Category?.CategoryName,
+                    IssuedAt = log.CreatedAt,
+                    Priority = log.Priority,
+                    Department = log.Staff?.Department?.DepartmentName,
+                    Status = log.LogStatus ?? "PENDING",
+                    Description = log.Description,
+                    Location = log.Location,
+                    AttachmentUrl = log.AttachmentUrl,
+                    AssignedTo = log.Technician != null ? $"{log.Technician.Initials} {log.Technician.Surname}" : "Unassigned"
+                });
+
+                return logDetails;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error fetching logs: " + ex.Message);
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine("Inner Exception: " + ex.InnerException.Message);
+                }
+                throw;
+            }
         }
 
         // Method for creating a new log entry
@@ -50,7 +82,7 @@ namespace TechTrackers.Service
                     Priority = logDto.Priority ?? "MEDIUM",
                     Location = logDto.Location ?? "Not specified",
                     CategoryId = logDto.Category_ID,
-                    //LogStatus = logDto.LogStatus = "PENDING",
+                    LogStatus = logDto.LogStatus = "PENDING",
                     AttachmentUrl = logDto.AttechmentUrl,
                     StaffId = logDto.Staff_ID,
                     CreatedAt = DateTime.Now,
