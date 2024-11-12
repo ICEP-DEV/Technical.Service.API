@@ -4,6 +4,7 @@
   "Documents": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\nevon\\desktop\\testingapi\\techtrackers.data\\model\\dto\\adduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\adduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,6 +40,8 @@
       "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\nevon\\desktop\\testingapi\\techtrackers.data\\techtrackersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\techtrackersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
       "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,6 +52,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.service\\adminlogsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\adminlogsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
     },
     {
@@ -97,12 +101,33 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.service\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
     },
     {
       "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.data\\model\\dto\\adminlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\adminlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.data\\model\\dto\\logdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\logdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.service\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
       "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -113,6 +138,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\desktop\\techtrackers.api.app\\techtrackers.api\\techtrackers.data\\model\\dto\\logdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\logdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
+=======
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
     }
   ],
@@ -127,6 +155,7 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "TechTrackers.Service.csproj",
@@ -207,6 +236,16 @@
               "RelativeToolTip": "TechTrackers.API\\Controllers\\AdminLogController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAADwvxgAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+=======
+              "DocumentIndex": 1,
+              "Title": "AdminLogController.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.API\\Controllers\\AdminLogController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\AdminLogController.cs",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.API\\Controllers\\AdminLogController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\AdminLogController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
               "WhenOpened": "2024-11-07T19:18:15.246Z",
               "EditorCaption": ""
             },
@@ -286,11 +325,15 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAQwBQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T06:45:07.71Z",
+<<<<<<< HEAD
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
+=======
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 15,
               "Title": "NotificationController.cs",
@@ -386,6 +429,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:23:25.997Z"
 =======
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
               "DocumentIndex": 3,
               "Title": "LogController.cs",
               "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.API\\Controllers\\LogController.cs",
@@ -408,6 +453,35 @@
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwBEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T06:45:06.607Z",
+<<<<<<< HEAD
+=======
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LogService.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.Service\\LogService.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\LogService.cs",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.Service\\LogService.cs",
+              "RelativeToolTip": "TechTrackers.Service\\LogService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:45:01.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.API\\appsettings.json",
+              "RelativeDocumentMoniker": "TechTrackers.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\ezram\\Desktop\\Techtrackers.API.App\\Techtrackers.API\\TechTrackers.API\\appsettings.json",
+              "RelativeToolTip": "TechTrackers.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-05T06:39:36.553Z",
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
               "EditorCaption": ""
             },
             {

@@ -83,6 +83,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
@@ -188,6 +189,8 @@
       },
 =======
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
       "Microsoft.AspNetCore.Http/2.2.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -216,6 +219,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -230,6 +234,8 @@
           }
         }
       },
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
 =======
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
@@ -1280,6 +1286,7 @@
       "hashPath": "mailkit.4.8.0.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1338,6 +1345,8 @@
     },
 =======
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
     "Microsoft.AspNetCore.Http/2.2.2": {
       "type": "package",
       "serviceable": true,
@@ -1353,6 +1362,7 @@
       "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1360,6 +1370,8 @@
       "path": "microsoft.aspnetcore.http.extensions/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512"
     },
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
 =======
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
     "Microsoft.AspNetCore.Http.Features/2.2.0": {

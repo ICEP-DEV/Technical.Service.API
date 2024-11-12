@@ -149,6 +149,7 @@ C:\Users\ezram\Desktop\Techtrackers.API.App\Techtrackers.API\TechTrackers.API\bi
 C:\Users\ezram\Desktop\Techtrackers.API.App\Techtrackers.API\TechTrackers.API\bin\Debug\net8.0\MailKit.dll
 C:\Users\ezram\Desktop\Techtrackers.API.App\Techtrackers.API\TechTrackers.API\bin\Debug\net8.0\MimeKit.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\bin\Debug\net8.0\appsettings.json
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\bin\Debug\net8.0\TechTrackers.API.exe
@@ -300,6 +301,9 @@ C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\obj\Debug\net8.0\TechTrackers
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\obj\Debug\net8.0\TechTrackers.API.genruntimeconfig.cache
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\obj\Debug\net8.0\ref\TechTrackers.API.dll
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+=======
+C:\Users\ezram\Desktop\Techtrackers.API.App\Techtrackers.API\TechTrackers.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
 =======
 C:\Users\ezram\Desktop\Techtrackers.API.App\Techtrackers.API\TechTrackers.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe

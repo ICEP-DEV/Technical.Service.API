@@ -33,6 +33,7 @@
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "ContainingType": "TechTrackers.API.Controllers.AddUserController",
     "Method": "AddUser",
     "RelativePath": "api/AddUser/AddUser",
@@ -112,6 +113,8 @@
     "ReturnTypes": []
   },
   {
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
 =======
 >>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
     "ContainingType": "TechTrackers.API.Controllers.AdminLogController",
