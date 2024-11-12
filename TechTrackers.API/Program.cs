@@ -24,12 +24,17 @@ builder.Services.AddCors(option => option.AddPolicy("corspolicy", builder =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+<<<<<<< HEAD
 
 
+=======
+builder.Services.AddScoped<AssignTechnicianService>();
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
 builder.Services.AddScoped<LogService, LogService>();
 builder.Services.AddScoped<UserLogService, UserLogService>();
 builder.Services.AddScoped<UserLogService, UserLogService>();
 builder.Services.AddScoped<LogService, LogService>();
+builder.Services.AddScoped<AdminLogsService, AdminLogsService>();
 builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IOTPService, OTPService>();

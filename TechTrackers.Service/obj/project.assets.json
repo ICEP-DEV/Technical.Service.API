@@ -89,6 +89,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -232,6 +233,8 @@
           }
         }
       },
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
       "Microsoft.AspNetCore.Http/2.2.2": {
         "type": "package",
         "dependencies": {
@@ -269,6 +272,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -288,6 +292,8 @@
           }
         }
       },
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2079,6 +2085,7 @@
         "mailkit.nuspec"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "sha512": "b0R9X7L6zMqNsssKDvhYHuNi5x0s4DyHTeXybIAyGaitKiW1Q5aAGKdV2codHPiePv9yHfC9hAMyScXQ/xXhPw==",
       "type": "package",
@@ -2183,6 +2190,8 @@
         "microsoft.aspnetcore.hosting.server.abstractions.nuspec"
       ]
     },
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
     "Microsoft.AspNetCore.Http/2.2.2": {
       "sha512": "BAibpoItxI5puk7YJbIGj95arZueM8B8M5xT1fXBn3hb3L2G3ucrZcYXv1gXdaroLbntUs8qeV8iuBrpjQsrKw==",
       "type": "package",
@@ -2209,6 +2218,7 @@
         "microsoft.aspnetcore.http.abstractions.nuspec"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
       "sha512": "2DgZ9rWrJtuR7RYiew01nGRzuQBDaGHGmK56Rk54vsLLsCdzuFUPqbDTJCS1qJQWTbmbIQ9wGIOjpxA1t0l7/w==",
       "type": "package",
@@ -2222,6 +2232,8 @@
         "microsoft.aspnetcore.http.extensions.nuspec"
       ]
     },
+=======
+>>>>>>> e7206164baadaf945e6e04d19d8bf54d13533bfe
     "Microsoft.AspNetCore.Http.Features/2.2.0": {
       "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
       "type": "package",
