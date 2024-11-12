@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TechTrackers.Data;
 using TechTrackers.Data.Model;
+using TechTrackers.Data.Model.dto;
 
 namespace TechTrackers.Service
 {
@@ -14,8 +15,18 @@ namespace TechTrackers.Service
         }
 
         //User
-        public async Task<User> RegisterUser(User user)
+        public async Task<User> RegisterUser(AddUserDto addUserDto)
         {
+            var user = new User
+            {
+                Surname = addUserDto.surname,
+                Initials = addUserDto.initials,
+                EmailAddress = addUserDto.emailAddress,
+                DepartmentId = addUserDto.departmentId,
+                RoleId = addUserDto.roleId,
+                PasswordHash = addUserDto.passwordHash,
+        };
+            
             await _dbContext.Users.AddAsync(user);
             await _dbContext.SaveChangesAsync();
             return user;

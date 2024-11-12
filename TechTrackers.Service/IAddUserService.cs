@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechTrackers.Data.Model;
+using TechTrackers.Data.Model.dto;
 
 namespace TechTrackers.Service
 {
@@ -11,7 +12,7 @@ namespace TechTrackers.Service
     {
 
         //Users
-        Task<User> RegisterUser(User user);
+        Task<User> RegisterUser(AddUserDto addUserDto);
         IEnumerable<User> GetUsers();
         Task<User> GetUserById(int id);
         Task<User> UpdateUser(User user);

@@ -40,8 +40,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "TechTrackers.Data.Model.User",
+        "Name": "addUserDto",
+        "Type": "TechTrackers.Data.Model.dto.AddUserDto",
         "IsRequired": true
       }
     ],

@@ -20,7 +20,7 @@ namespace TechTrackers.API.Controllers
         //User
         //Add User
         [HttpPost]
-        public async Task<IActionResult> AddUser([FromBody] User user)
+        public async Task<IActionResult> AddUser([FromBody] AddUserDto addUserDto)
         {
             var respondWrapper = new RespondWrapper
             {
@@ -28,7 +28,7 @@ namespace TechTrackers.API.Controllers
                 Message = "Unable to add user."
             };
 
-            var results = await _addUserService.RegisterUser(user);
+            var results = await _addUserService.RegisterUser(addUserDto);
 
             if (results != null)
             {
