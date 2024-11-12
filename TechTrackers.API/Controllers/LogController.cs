@@ -26,7 +26,7 @@ namespace TechTrackers.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateLog([FromBody] LogDto logDto)
+        public async Task<IActionResult> CreateLog([FromForm] LogDto logDto)
         {
             /*try
             {
@@ -62,33 +62,44 @@ namespace TechTrackers.API.Controllers
 
             try
             {
+                // Process the file if it's included
+                if (logDto.AttachmentFile != null)
+                {
+                    // Save the file to a directory and set the file path in `AttachmentUrl`
+                    var filePath = Path.Combine("uploads", logDto.AttachmentFile.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await logDto.AttachmentFile.CopyToAsync(stream);
+                    }
+                    logDto.AttechmentUrl = filePath; // Save file path in `AttachmentUrl`
+                }
+
                 var log = await _logService.LogIssue(logDto);
                 return Ok(log);
             }
-            catch (ValidationException ex)
-            {
-                // Capture detailed validation errors if available
-                return BadRequest(new { message = ex.Message, errors = ex.Data });
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error details:", ex); // Detailed error logging on the server
-                return StatusCode(500, new { message = "An internal server error occurred." });
+                catch (ValidationException ex)
+                {
+                    return BadRequest(new { message = ex.Message, errors = ex.Data });
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error details:", ex);
+                    return StatusCode(500, new { message = "An internal server error occurred." });
             }
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<LogDetailDto>>> GetLogs()
+        public async Task<ActionResult<IEnumerable<LogDetailDto>>> GetLogs([FromQuery] int? userId)
         {
             try
             {
-                var logs = await _logService.GetAllLogsAsync();
+                var logs = await _logService.GetAllLogsAsync(userId);
                 return Ok(logs);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while retrieving logs.");
-                return StatusCode(500, new { message = "An internal server error occurred." });
+                return StatusCode(500, new { message = "An internal server error occurred.", details = ex.Message });
             }
         }
 
@@ -97,6 +108,16 @@ namespace TechTrackers.API.Controllers
         {
             try
             {
+                // Log the incoming data for debugging
+                Console.WriteLine($"Received AssignTechnicianDto: LogId = {assignDto.LogId}, TechnicianId = {assignDto.TechnicianId}");
+
+                // Validate that the LogId and TechnicianId are present and valid
+                if (assignDto.LogId <= 0 || assignDto.TechnicianId <= 0)
+                {
+                    return BadRequest(new { message = "Invalid LogId or TechnicianId." });
+                }
+
+                // Fetch the log entry from the database
                 var log = await _dbContext.Logs.FindAsync(assignDto.LogId);
                 if (log == null)
                 {
@@ -112,7 +133,7 @@ namespace TechTrackers.API.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error details:", ex); // Detailed error logging on the server
+                Console.WriteLine("Error details:", ex); // Log detailed error
                 return StatusCode(500, new { message = "An internal server error occurred." });
             }
         }

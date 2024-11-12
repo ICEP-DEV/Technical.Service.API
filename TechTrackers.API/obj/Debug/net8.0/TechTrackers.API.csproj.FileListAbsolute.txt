@@ -298,3 +298,4 @@ C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\obj\Debug\net8.0\refint\TechT
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\obj\Debug\net8.0\TechTrackers.API.pdb
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\obj\Debug\net8.0\TechTrackers.API.genruntimeconfig.cache
 C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\obj\Debug\net8.0\ref\TechTrackers.API.dll
+C:\Users\nevon\Desktop\TestingAPI\TechTrackers.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

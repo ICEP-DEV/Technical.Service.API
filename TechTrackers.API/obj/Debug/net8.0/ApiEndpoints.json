@@ -111,6 +111,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TechTrackers.API.Controllers.AdminLogController",
+    "Method": "GetLogs",
+    "RelativePath": "api/AdminLog/GetLogs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TechTrackers.Data.Model.dto.LogDetailDto, TechTrackers.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "TechTrackers.API.Controllers.FeedbackController",
     "Method": "GetFeedbackByLog",
     "RelativePath": "api/Feedback/GetFeedbackByLog/{logId}",
@@ -167,9 +187,59 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "logDto",
-        "Type": "TechTrackers.Data.Model.dto.LogDto",
-        "IsRequired": true
+        "Name": "Issue_Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category_ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Priority",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Created_at",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AttechmentUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LogStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Staff_ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "AttachmentFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -181,7 +251,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[TechTrackers.Data.Model.dto.LogDetailDto, TechTrackers.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -219,6 +295,26 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.TechnicianController",
+    "Method": "GetAllTechnicians",
+    "RelativePath": "api/Technician/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TechTrackers.Data.Model.User, TechTrackers.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "TechTrackers.API.Controllers.UserController",
