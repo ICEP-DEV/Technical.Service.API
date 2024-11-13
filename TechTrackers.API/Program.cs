@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TechTrackers.Data;
 using TechTrackers.Service;
-using TechTrackers.Service.AdminService;
+using TechTrackers.Service.Administrator;
 using TechTrackers.Service.General;
 using TechTrackers.Service.Services;
 
@@ -37,7 +37,10 @@ builder.Services.AddScoped<IUserService, UserOtpService>();
 
 //Lunga
 builder.Services.AddScoped<IGeneralService, GeneralService>();
-builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<INotifyService, NotifyService>();
+builder.Services.AddScoped<IAdministratorService, AdministratorService>();
+
+
 
 
 

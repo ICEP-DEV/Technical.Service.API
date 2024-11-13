@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1d7FoBMEcNMd7NTFAweE5sIx4UsK6oPBH67QjMKJqNnr2TEfi9/ZC+x3W2Dwy2IpoudGIyclwmuaqPmrOt/HWw==",
+  "dgSpecHash": "H6amqeJLHunKm/dT5BsfOzWjrL1BtLGogWIYj/AcUrkBeeKYGEIVk8HeHhi2W9oiIQwecpOzSpwQvmVxpWyvcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+  "projectFilePath": "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Data\\TechTrackers.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\222883750\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\222883750\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

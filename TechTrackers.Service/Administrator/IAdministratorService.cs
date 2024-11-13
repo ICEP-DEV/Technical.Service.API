@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 using TechTrackers.Data.Model;
 using TechTrackers.Data.Model.dto;
 
-namespace TechTrackers.Service.AdminService
+namespace TechTrackers.Service.Administrator
 {
-    public interface IAdminService
+    public interface IAdministratorService
     {
         Task<SLA> AddSLA(string priority);
-        Task<bool> AssignSLAToLog(int slaId, int logId);
-        Task<bool> CheckAndHandleSLACompliance(SLAComplianceDto complianceDto);
+        Task<RespondWrapper> AssignSLAToLog(int slaId, int logId);
+        Task<RespondWrapper> CheckAndHandleSLACompliance(int logId);
     }
 }

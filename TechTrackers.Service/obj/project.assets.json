@@ -4295,11 +4295,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
+      "projectUniqueName": "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Service\\TechTrackers.Service.csproj",
       "projectName": "TechTrackers.Service",
-      "projectPath": "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
+      "projectPath": "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Service\\TechTrackers.Service.csproj",
       "packagesPath": "C:\\Users\\222883750\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Service\\obj\\",
+      "outputPath": "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\222883750\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4316,8 +4316,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj": {
-              "projectPath": "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj"
+            "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Data\\TechTrackers.Data.csproj": {
+              "projectPath": "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Data\\TechTrackers.Data.csproj"
             }
           }
         }

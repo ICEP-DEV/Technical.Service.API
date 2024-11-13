@@ -4275,11 +4275,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+      "projectUniqueName": "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Data\\TechTrackers.Data.csproj",
       "projectName": "TechTrackers.Data",
-      "projectPath": "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+      "projectPath": "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Data\\TechTrackers.Data.csproj",
       "packagesPath": "C:\\Users\\222883750\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\222883750\\Source\\Repos\\Techtrackers.API\\TechTrackers.Data\\obj\\",
+      "outputPath": "C:\\Users\\222883750\\source\\repos\\BackEnd\\TechTrackers.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\222883750\\AppData\\Roaming\\NuGet\\NuGet.Config",
