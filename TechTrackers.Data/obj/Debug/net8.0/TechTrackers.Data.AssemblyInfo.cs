@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechTrackers.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26ceeeda905f640b985ae301ded94f0696e1f628")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5f6041a3495f6a49cb2481ae9d8a56d80807984")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechTrackers.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechTrackers.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

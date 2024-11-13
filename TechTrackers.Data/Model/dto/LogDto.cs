@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -18,8 +19,10 @@ namespace TechTrackers.Data.Model.dto
          public DateTime Created_at { get; set; }
          public string? Location { get; set; }
          public string? AttechmentUrl { get; set; }     
-         //public string? LogStatus { get; set; }
+         public string? LogStatus { get; set; }
          public int Staff_ID { get; set; }
+
+         public IFormFile? AttachmentFile { get; set; }
 
     }
 }
