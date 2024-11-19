@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {}
+    "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {
+    "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
+        "projectUniqueName": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
         "projectName": "TechTrackers.Service",
-        "projectPath": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
+        "projectPath": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\TechTrackers.Service.csproj",
         "packagesPath": "C:\\Users\\ezram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ezram\\Desktop\\ICEP-Projects\\Techtrackers.API\\TechTrackers.Service\\obj\\",
+        "outputPath": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ezram\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

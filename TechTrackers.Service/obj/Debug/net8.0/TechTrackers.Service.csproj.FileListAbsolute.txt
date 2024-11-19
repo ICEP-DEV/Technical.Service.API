@@ -1,0 +1,12 @@
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.deps.json
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.dll
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.pdb
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.AssemblyInfoInputs.cache
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.AssemblyInfo.cs
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.csproj.CoreCompileInputs.cache
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.sourcelink.json
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.dll
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\refint\TechTrackers.Service.dll
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.pdb
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\ref\TechTrackers.Service.dll
