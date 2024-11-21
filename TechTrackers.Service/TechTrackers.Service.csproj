@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TechTrackers.API\TechTrackers.API.csproj" />
     <ProjectReference Include="..\TechTrackers.Data\TechTrackers.Data.csproj" />
   </ItemGroup>
 
