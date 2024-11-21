@@ -34,13 +34,13 @@ namespace TechTrackers.Service
                 Expiration = DateTime.UtcNow.AddMinutes(5), // Set expiration as needed
                 IsValid = true
             };
-            _context.UserOtps.Add(userOtp);
+            _context.User_Otps.Add(userOtp);
             await _context.SaveChangesAsync();
         }
 
         public async Task<bool> ValidateOtp(string email, string otp)
         {
-            var storedOtp = await _context.UserOtps
+            var storedOtp = await _context.User_Otps
                 .Where(o => o.UserEmail == email && o.IsValid && o.Expiration > DateTime.UtcNow)
                 .OrderByDescending(o => o.Expiration) // If multiple, get the latest
                 .FirstOrDefaultAsync();

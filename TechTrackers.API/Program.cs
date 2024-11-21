@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using TechTrackers.Service;
 using TechTrackers.Data;
+using TechTrackers.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,8 +27,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<AssignTechnicianService>();
 builder.Services.AddScoped<LogService, LogService>();
-builder.Services.AddScoped<UserLogService, UserLogService>();
-builder.Services.AddScoped<UserLogService, UserLogService>();
+builder.Services.AddScoped< UserLogService, UserLogService>();
 builder.Services.AddScoped<LogService, LogService>();
 builder.Services.AddScoped<AdminLogsService, AdminLogsService>();
 builder.Services.AddScoped<INotificationService, NotificationService>();

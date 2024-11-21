@@ -10,3 +10,9 @@ C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Serv
 C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\refint\TechTrackers.Service.dll
 C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.pdb
 C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\ref\TechTrackers.Service.dll
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.csproj.AssemblyReference.cache
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Service.runtimeconfig.json
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Data.dll
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\bin\Debug\net8.0\TechTrackers.Data.pdb
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrac.1215D5EB.Up2Date
+C:\Users\ezram\Documents\NewTechtrackers.APIs\Techtrackers.API\TechTrackers.Service\obj\Debug\net8.0\TechTrackers.Service.genruntimeconfig.cache
