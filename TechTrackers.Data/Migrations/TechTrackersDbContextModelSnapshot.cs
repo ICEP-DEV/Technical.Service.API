@@ -135,8 +135,8 @@ namespace TechTrackers.Data.Migrations
                     b.Property<int?>("AssignedBy")
                         .HasColumnType("int");
 
-                    b.Property<string>("AttachmentUrl")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<byte[]>("AttachmentFile")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
@@ -152,6 +152,9 @@ namespace TechTrackers.Data.Migrations
 
                     b.Property<int>("EscalationLevel")
                         .HasColumnType("int");
+
+                    b.Property<string>("IssueTitle")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
@@ -184,6 +187,9 @@ namespace TechTrackers.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("UserId1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserIssueId")
                         .HasColumnType("int");
 
                     b.HasKey("LogId");

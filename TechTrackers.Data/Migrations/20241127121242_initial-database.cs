@@ -122,14 +122,16 @@ namespace TechTrackers.Data.Migrations
                 {
                     LogId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    UserIssueId = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Priority = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ResolutionDue = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ResponseDue = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    AttachmentUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AttachmentFile = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
                     EscalationLevel = table.Column<int>(type: "int", nullable: false),
                     AssignedBy = table.Column<int>(type: "int", nullable: true),
                     Location = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IssueTitle = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LogStatus = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TechnicianId = table.Column<int>(type: "int", nullable: true),
                     StaffId = table.Column<int>(type: "int", nullable: false),

@@ -53,9 +53,12 @@ namespace TechTrackers.Service
                     Status = log.LogStatus ?? "PENDING",
                     Description = log.Description,
                     Location = log.Location,
-                    AttachmentUrl = log.AttachmentUrl,
+                    //AttachmentFile = log.AttachmentFile,
                     AssignedTo = log.Technician != null ? $"{log.Technician.Initials} {log.Technician.Surname}" : "Unassigned",
                     LogBy = log.Staff != null ? log.Staff.Initials + " " + log.Staff.Surname : null,
+                    AttachmentBase64 = log.AttachmentFile != null
+                        ? Convert.ToBase64String(log.AttachmentFile)
+                        : null
 
                 });
 

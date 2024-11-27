@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,6 @@ namespace TechTrackers.Data.Model.dto
         public string? Priority { get; set; }
         public string? Status { get; set; }
         public string? Description { get; set; }
-        public string? AttachmentUrl { get; set; }
+        public string? AttachmentBase64 { get; set; }
     }
 }

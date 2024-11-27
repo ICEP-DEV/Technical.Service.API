@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,19 +14,20 @@ namespace TechTrackers.Data.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int LogId { get; set; }
 
+        public int UserIssueId { get; set; }
         public string? Description { get; set; }
 
         public string? Priority { get; set; } // 'LOW', 'MEDIUM', 'HIGH'
 
         public DateTime? ResolutionDue { get; set; }
         public DateTime? ResponseDue { get; set; }
-        public string? AttachmentUrl { get; set; }
+        public byte[]? AttachmentFile { get; set; }
         public int EscalationLevel { get; set; }
         public int? AssignedBy { get; set; } // Foreign Key for AssignedByUser
         public User? AssignedByUser { get; set; } // Navigation Property
 
         public string? Location { get; set; }
-
+        public string? IssueTitle { get; set; }
         public string? LogStatus { get; set; } // 'PENDING', 'IN PROGRESS', 'RESOLVED', 'ON HOLD'
 
         public int? TechnicianId { get; set; } // Foreign Key for Technician
@@ -44,6 +45,6 @@ namespace TechTrackers.Data.Model
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime AssignedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
-
     }
+
 }

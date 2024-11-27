@@ -18,10 +18,8 @@ namespace TechTrackers.Data.Model.dto
         public string? Description { get; set; }
         public DateTime Created_at { get; set; }
         public string? Location { get; set; }
-        public string? AttechmentUrl { get; set; }
         public string? LogStatus { get; set; }
         public int Staff_ID { get; set; }
-
         public IFormFile? AttachmentFile { get; set; }
 
     }

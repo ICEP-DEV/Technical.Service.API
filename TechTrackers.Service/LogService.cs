@@ -16,14 +16,14 @@ namespace TechTrackers.Service
         }
 
         // Method to fetch all the logs
-        private string GetDepartmentInitials(string departmentName, int logId)
+        private string GetDepartmentInitials(string departmentName, int userIssueId)
         {
             if (string.IsNullOrEmpty(departmentName))
-                return $"LOG-{logId:D4}";
+                return $"LOG-{userIssueId:D4}";
 
             // Extract initials by taking the first letter of each word
             var initials = string.Join("", departmentName.Split(' ').Select(word => word[0])).ToUpper();
-            return $"{initials}-{logId:D4}";
+            return $"{initials}-{userIssueId:D4}";
         }
         public async Task<IEnumerable<LogDetailDto>> GetAllLogsAsync(int? userId, bool isTechnician)
         {
@@ -55,16 +55,21 @@ namespace TechTrackers.Service
                 // Transform the data after fetching it
                 var logDetails = logs.Select(log => new LogDetailDto
                 {
-                    IssueId = GetDepartmentInitials(log.Staff?.Department?.DepartmentName, log.LogId),
+                    IssueId = GetDepartmentInitials(log.Staff?.Department?.DepartmentName, log.UserIssueId),
                     CategoryName = log.Category?.CategoryName,
                     IssuedAt = log.CreatedAt.ToString("yyyy-MM-dd hh:mm tt"),
                     Priority = log.Priority,
+                    IssueTitle = log.IssueTitle,
                     Department = log.Staff?.Department?.DepartmentName,
                     Status = log.LogStatus ?? "PENDING",
                     Description = log.Description,
                     Location = log.Location,
-                    AttachmentUrl = log.AttachmentUrl,
-                    AssignedTo = log.Technician != null ? $"{log.Technician.Initials} {log.Technician.Surname}" : "Unassigned"
+                    //AttachmentUrl = log.AttachmentUrl,
+                    AssignedTo = log.Technician != null ? $"{log.Technician.Initials} {log.Technician.Surname}" : "Unassigned",
+
+                    AttachmentBase64 = log.AttachmentFile != null
+                        ? Convert.ToBase64String(log.AttachmentFile)
+                        : null
                 });
 
                 return logDetails;
@@ -94,18 +99,42 @@ namespace TechTrackers.Service
                     throw new Exception($"SLA not found for the selected priority level: {logDto.Priority}.");
                 }
 
+                byte[]? fileData = null;
+                if (logDto.AttachmentFile != null)
+                {
+                    Console.WriteLine($"Received file with name: {logDto.AttachmentFile.FileName}");
+                    using (var ms = new MemoryStream())
+                    {
+                        await logDto.AttachmentFile.CopyToAsync(ms);
+                        fileData = ms.ToArray();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No file received in the request.");
+                }
+
+                //Finding the highest UserIssueId for the current User
+                var maxUserIssuedId = await _dbContext.Logs
+                    .Where(l => l.StaffId == logDto.Staff_ID)
+                    .MaxAsync(l => (int?)l.UserIssueId) ?? 0;
+
+                //Setting the new  UserIssuedId to be max + 1
+                var newUserIssueId = maxUserIssuedId + 1;
 
                 // Log SLA lookup success
                 Console.WriteLine($"SLA found: SLA_ID = {sla.SLAId}, Response_Time = {sla.ResponseTimeframe}, Resolution_Time = {sla.ResolutionTimeframe}");
 
                 var log = new Log
                 {
+                    UserIssueId = newUserIssueId,
+                    IssueTitle = logDto.Issue_Title,
                     Description = logDto.Description,
                     Priority = logDto.Priority ?? "MEDIUM",
                     Location = logDto.Location ?? "Not specified",
                     CategoryId = logDto.Category_ID,
                     LogStatus = logDto.LogStatus = "PENDING",
-                    AttachmentUrl = logDto.AttechmentUrl,
+                    AttachmentFile = fileData,
                     StaffId = logDto.Staff_ID,
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now,
@@ -116,7 +145,21 @@ namespace TechTrackers.Service
                 await _dbContext.Logs.AddAsync(log);
                 await _dbContext.SaveChangesAsync();
                 // Log success
-                Console.WriteLine("Log successfully created with ID: " + log.LogId);
+                Console.WriteLine($"Log successfully created with UserIssueId: {log.UserIssueId}");
+
+                var notification = new Notification
+                {
+                    LogId = log.LogId,
+                    UserId = log.StaffId, // Assuming staff user needs to be notified
+                    Message = $"Your issue has been logged successfully with reference ID: {GetDepartmentInitials(logDto.Department, log.LogId)}",
+                    Type = "INFORMATION",
+                    Timestamp = DateTime.Now,
+                    ReadStatus = false
+                };
+
+                await _dbContext.Notifications.AddAsync(notification);
+                await _dbContext.SaveChangesAsync();
+
                 return log;
             }
             catch (Exception ex)
@@ -131,6 +174,48 @@ namespace TechTrackers.Service
         }
 
 
+
+        //NOTIFICATIONS 
+
+        public async Task<IEnumerable<NotificationDto>> GetNotificationsAsync(int userId, bool onlyUnread = false)
+        {
+            try
+            {
+                var query = _dbContext.Notifications
+                    .Where(n => n.UserId == userId)
+                    .AsQueryable();
+
+                if (onlyUnread)
+                {
+                    query = query.Where(n => !n.ReadStatus);
+                }
+
+                var notifications = await query.OrderByDescending(n => n.Timestamp).ToListAsync();
+
+                // Transform data into a DTO
+                var notificationDtos = notifications.Select(n => new NotificationDto
+                {
+                    NotificationId = n.NotificationId,
+                    LogId = n.LogId,
+                    UserId = n.UserId,
+                    Message = n.Message,
+                    Type = n.Type,
+                    Timestamp = n.Timestamp,
+                    ReadStatus = n.ReadStatus
+                });
+
+                return notificationDtos;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching notifications: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"Inner Exception: {ex.InnerException.Message}");
+                }
+                throw new Exception("Failed to retrieve notifications due to server error.", ex);
+            }
+        }
 
         /* return await _dbContext.Logs
             .Include(log => log.Technician) // Include the Technician (user with a technician role)

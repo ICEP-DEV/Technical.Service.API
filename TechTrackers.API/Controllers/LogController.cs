@@ -62,17 +62,6 @@ namespace TechTrackers.API.Controllers
 
             try
             {
-                // Process the file if it's included
-                if (logDto.AttachmentFile != null)
-                {
-                    // Save the file to a directory and set the file path in `AttachmentUrl`
-                    var filePath = Path.Combine("uploads", logDto.AttachmentFile.FileName);
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await logDto.AttachmentFile.CopyToAsync(stream);
-                    }
-                    logDto.AttechmentUrl = filePath; // Save file path in `AttachmentUrl`
-                }
 
                 var log = await _logService.LogIssue(logDto);
                 return Ok(log);
@@ -203,6 +192,32 @@ namespace TechTrackers.API.Controllers
                 return 2; // Escalation to supervisor/manager
             return 1; // Normal level with no escalation
         }
+
+
+
+
+
+
+
+
+
+        /*================================================================================================================*/
+        //NOTIFICATIONS STILL UNDER CONSIDARATION
+        [HttpGet("{userId}")]
+        public async Task<IActionResult> GetNotifications(int userId, [FromQuery] bool onlyUnread = false)
+        {
+            try
+            {
+                var notifications = await _logService.GetNotificationsAsync(userId, onlyUnread);
+                return Ok(notifications);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error fetching notifications for user {userId}: {ex.Message}");
+                return StatusCode(500, new { message = "An internal server error occurred." });
+            }
+        }
+
 
     }
 }
