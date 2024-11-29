@@ -12,7 +12,7 @@ using TechTrackers.Data;
 namespace TechTrackers.Data.Migrations
 {
     [DbContext(typeof(TechTrackersDbContext))]
-    [Migration("20241127121242_initial-database")]
+    [Migration("20241129063422_initial-database")]
     partial class initialdatabase
     {
         /// <inheritdoc />
