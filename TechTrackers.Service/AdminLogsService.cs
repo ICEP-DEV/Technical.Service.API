@@ -46,6 +46,7 @@ namespace TechTrackers.Service
                 {
                     LogId = log.LogId,
                     IssueId = GetDepartmentInitials(log.Staff?.Department?.DepartmentName, log.LogId),
+                    IssueTitle = log.IssueTitle, 
                     CategoryName = log.Category?.CategoryName,
                     IssuedAt = log.CreatedAt,
                     Priority = log.Priority,
@@ -74,6 +75,31 @@ namespace TechTrackers.Service
                 throw;
             }
         }
+
+        public async Task<List<AdminLogDto>> GetAdminLoggedIssuesAsync(int adminId)
+        {
+            return await _dbContext.Logs
+                .Where(log => log.StaffId == adminId) // Filter logs by userId
+                .Select(log => new AdminLogDto
+                {
+                    LogId = log.LogId,
+                    IssueId = $"{log.Staff.Department.DepartmentName}-{log.LogId}", // Combine department name and log ID
+                    AssignedTo = $"{log.Technician.Surname}-{log.Technician.Initials}",
+                    LogBy = $"{log.Staff.Surname} {log.Staff.Initials}",
+                    Location = log.Location,
+                    CategoryName = log.Category.CategoryName,
+                    IssuedAt = log.CreatedAt,
+                    Department = log.Staff.Department.DepartmentName,
+                    Priority = log.Priority,
+                    Status = log.LogStatus ?? "PENDING",
+                    IssueTitle = log.IssueTitle,
+                    AttachmentBase64 = log.AttachmentFile != null
+                        ? Convert.ToBase64String(log.AttachmentFile)
+                        : null
+                })
+                .ToListAsync();
+        }
+
 
     }
 }

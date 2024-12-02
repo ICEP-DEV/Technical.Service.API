@@ -35,5 +35,25 @@ namespace TechTrackers.API.Controllers
                 return StatusCode(500, new { message = "An internal server error occurred.", details = ex.Message });
             }
         }
+
+        [HttpGet("GetAdminLoggedIssues/admin/{adminId}")]
+        public async Task<ActionResult<List<AdminLogDto>>> GetAdminLoggedIssues(int adminId)
+        {
+            try
+            {
+                var issues = await _adminLogsService.GetAdminLoggedIssuesAsync(adminId);
+
+                if (issues == null || issues.Count == 0)
+                {
+                    return NotFound("No logged issues found for this admin.");
+                }
+
+                return Ok(issues);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

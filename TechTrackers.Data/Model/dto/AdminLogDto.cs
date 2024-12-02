@@ -11,6 +11,9 @@ namespace TechTrackers.Data.Model.dto
     {
         public int LogId { get; set; }
         public string? IssueId { get; set; } // Combine department name and log ID
+
+        public string? IssueTitle { get; set; }
+
         public string? AssignedTo { get; set; }
         public string? LogBy { get; set; }
         public string? Location { get; set; }

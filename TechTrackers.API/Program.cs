@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using TechTrackers.Service;
 using TechTrackers.Data;
 using TechTrackers.Service.Services;
+using TechTrackers.Service.ManageLogs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +36,8 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IOTPService, OTPService>();
 builder.Services.AddScoped<IUserService, UserOtpService>();
 builder.Services.AddHostedService<SLAMonitoringService>();
+//
+builder.Services.AddScoped<IManageLogs, ManageLogsService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

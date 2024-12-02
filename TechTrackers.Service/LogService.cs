@@ -90,7 +90,7 @@ namespace TechTrackers.Service
         {
             try
             {
-                // Retrive the SLA based on the priority level
+                // Retrieve the SLA based on the priority level
                 var sla = await _dbContext.SLAs
                     .FirstOrDefaultAsync(s => s.PriorityLevel == logDto.Priority);
 
@@ -114,12 +114,12 @@ namespace TechTrackers.Service
                     Console.WriteLine("No file received in the request.");
                 }
 
-                //Finding the highest UserIssueId for the current User
+                // Finding the highest UserIssueId for the current User
                 var maxUserIssuedId = await _dbContext.Logs
                     .Where(l => l.StaffId == logDto.Staff_ID)
                     .MaxAsync(l => (int?)l.UserIssueId) ?? 0;
 
-                //Setting the new  UserIssuedId to be max + 1
+                // Setting the new UserIssueId to be max + 1
                 var newUserIssueId = maxUserIssuedId + 1;
 
                 // Log SLA lookup success
@@ -139,26 +139,59 @@ namespace TechTrackers.Service
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now,
                     SLAId = sla.SLAId
-
                 };
 
                 await _dbContext.Logs.AddAsync(log);
                 await _dbContext.SaveChangesAsync();
-                // Log success
-                Console.WriteLine($"Log successfully created with UserIssueId: {log.UserIssueId}");
 
-                var notification = new Notification
+                // Notify the staff member who logged the issue
+                var notificationForStaff = new Notification
                 {
                     LogId = log.LogId,
-                    UserId = log.StaffId, // Assuming staff user needs to be notified
+                    UserId = log.StaffId, // Notify the staff member
                     Message = $"Your issue has been logged successfully with reference ID: {GetDepartmentInitials(logDto.Department, log.LogId)}",
                     Type = "INFORMATION",
                     Timestamp = DateTime.Now,
                     ReadStatus = false
                 };
+                await _dbContext.Notifications.AddAsync(notificationForStaff);
 
-                await _dbContext.Notifications.AddAsync(notification);
+                var staffMember = await _dbContext.Users
+                             .FirstOrDefaultAsync(u => u.UserId == logDto.Staff_ID);
+
+                if (staffMember != null)
+                {
+                    var staffInitials = $"{staffMember.Initials}"; // Assuming 'Initials' is a property of the 'User' model
+                }
+                else
+                {
+                    var staffInitials = "Unknown"; // Fallback in case the user is not found
+                }
+
+                // Notify admin(s) about the logged issue
+                var adminUsers = await _dbContext.Users
+                         .Where(u => u.Role.RoleName == "Admin") // Assuming Role is a navigation property
+                         .ToListAsync();
+
+
+                foreach (var admin in adminUsers)
+                {
+                    var notificationForAdmin = new Notification
+                    {
+                        LogId = log.LogId,
+                        UserId = admin.UserId, // Notify each admin
+                        Message = $"Staff member ({staffMember.Surname + " "+staffMember.Initials} ) has logged a new issue titled: '{logDto.Issue_Title}'.",
+                        Type = "ALERT",
+                        Timestamp = DateTime.Now,
+                        ReadStatus = false
+                    };
+                    await _dbContext.Notifications.AddAsync(notificationForAdmin);
+                }
+
                 await _dbContext.SaveChangesAsync();
+
+                // Log success
+                Console.WriteLine($"Log successfully created with UserIssueId: {log.UserIssueId}");
 
                 return log;
             }
@@ -172,6 +205,7 @@ namespace TechTrackers.Service
                 throw new Exception("Failed to log issue due to server error.", ex);
             }
         }
+
 
 
 
