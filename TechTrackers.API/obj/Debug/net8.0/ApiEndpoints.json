@@ -143,11 +143,6 @@
         "IsRequired": false
       },
       {
-        "Name": "AttechmentUrl",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "LogStatus",
         "Type": "System.String",
         "IsRequired": false
@@ -232,6 +227,59 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.LogController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/Log/GetNotifications/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "onlyUnread",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.NewNotificationController",
+    "Method": "GetUserNotifications",
+    "RelativePath": "api/NewNotification/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.NewNotificationController",
+    "Method": "MarkNotificationAsRead",
+    "RelativePath": "api/NewNotification/markAsRead/{notificationId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "TechTrackers.API.Controllers.TechnicianController",
