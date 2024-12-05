@@ -5169,19 +5169,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\222883750\\.nuget\\packages\\": {}
+    "C:\\Users\\ezram\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\TechTrackers.Data.csproj",
+      "projectUniqueName": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
       "projectName": "TechTrackers.Data",
-      "projectPath": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\TechTrackers.Data.csproj",
-      "packagesPath": "C:\\Users\\222883750\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\obj\\",
+      "projectPath": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\TechTrackers.Data.csproj",
+      "packagesPath": "C:\\Users\\ezram\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\222883750\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ezram\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5189,6 +5189,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5257,7 +5258,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

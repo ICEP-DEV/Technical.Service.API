@@ -36,6 +36,7 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IOTPService, OTPService>();
 builder.Services.AddScoped<IUserService, UserOtpService>();
 builder.Services.AddHostedService<SLAMonitoringService>();
+builder.Services.AddScoped<TechnicianService>();
 //
 builder.Services.AddScoped<IManageLogs, ManageLogsService>();
 builder.Services.AddEndpointsApiExplorer();

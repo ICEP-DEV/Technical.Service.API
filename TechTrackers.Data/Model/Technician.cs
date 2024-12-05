@@ -11,15 +11,13 @@ namespace TechTrackers.Data.Model
     public class Technician
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int TechnicianId { get; set; }
-
         [ForeignKey("User")]
-        public int UserId { get; set; }
+        public int TechnicianId { get; set; } // Same as UserId for one-to-one mapping
         public User? User { get; set; }
+
         public string? Specialization { get; set; }
-        public string? Contact { get; set; }
-        public TimeSpan? FromTime { get; set; } // Start of availability
-        public TimeSpan? ToTime { get; set; }
+        public string? Contacts { get; set; }
+        public TimeSpan FromTime { get; set; } // Start of availability
+        public TimeSpan ToTime { get; set; }
     }
 }
