@@ -8,12 +8,14 @@ namespace TechTrackers.Data.Model.dto
 {
     public class TechnicianDto
     {
-        public string? FullName { get; set; }
-        public string? Email { get; set; }
-        public string? Specialization { get; set; }
-        public string? Contact { get; set; }
-        public string? Password { get; set; } // Ideally, hash this before storin
-        public TimeSpan FromTime { get; set; }
-        public TimeSpan ToTime { get; set; }
+        public string Surname { get; set; } = string.Empty;
+        public string Initials { get; set; } = string.Empty;
+        public string EmailAddress { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public int DepartmentId { get; set; }
+        public string? FromTime { get; set; } = string.Empty;
+        public string? ToTime { get; set; } = string.Empty;
+        public string Specialization { get; set; } = string.Empty;
+        public string Contacts { get; set; } = string.Empty;
     }
 }

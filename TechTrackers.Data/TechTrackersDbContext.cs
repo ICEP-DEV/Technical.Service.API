@@ -19,6 +19,7 @@ namespace TechTrackers.Data
         public DbSet<LogStatusHistory> Log_status_history { get; set; }
         public DbSet<UserRole> User_Roles { get; set; }
         public DbSet<UserOtp> User_Otps { get; set; }
+        public DbSet<Technician> Technicians { get; set; }  
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
