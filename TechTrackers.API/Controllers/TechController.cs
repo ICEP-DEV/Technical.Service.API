@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using TechTrackers.Service.TechnicianServices;
+using TechTrackers.Service.TechnicianServicess;
 
 namespace TechTrackers.API.Controllers
 {

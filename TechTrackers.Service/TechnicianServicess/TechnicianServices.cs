@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 using TechTrackers.Data;
 using TechTrackers.Data.Model.dto;
 
-namespace TechTrackers.Service.TechnicianServices
+namespace TechTrackers.Service.TechnicianServicess
 {
-    public class TechnicianService: ITechnicianService
+    public class TechnicianServices: ITechnicianService
     {
         private readonly TechTrackersDbContext _context;
 
-        public TechnicianService(TechTrackersDbContext context)
+        public TechnicianServices(TechTrackersDbContext context)
         {
             _context = context;
         }

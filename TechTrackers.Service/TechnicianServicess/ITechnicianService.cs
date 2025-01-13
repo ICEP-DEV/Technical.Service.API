@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TechTrackers.Data.Model.dto;
 
-namespace TechTrackers.Service.TechnicianServices
+namespace TechTrackers.Service.TechnicianServicess
 {
     public interface ITechnicianService
     {

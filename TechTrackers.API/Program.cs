@@ -3,8 +3,9 @@ using TechTrackers.Service;
 using TechTrackers.Data;
 using TechTrackers.Service.Services;
 using TechTrackers.Service.ManageLogs;
-using TechTrackers.Service.TechnicianServices;
+using TechTrackers.Service.TechnicianServicess;
 using TechTrackers.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,11 +40,11 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IOTPService, OTPService>();
 builder.Services.AddScoped<IUserService, UserOtpService>();
 builder.Services.AddHostedService<SLAMonitoringService>();
-builder.Services.AddScoped<TechnicianService>();
+/*builder.Services.AddScoped<TechnicianService>();*/
 //
 builder.Services.AddScoped<IManageLogs, ManageLogsService>();
-builder.Services.AddScoped<ITechnicianService, TechnicianService>();
-builder.Services.AddScoped<ITechReviews, TechReviews>();
+builder.Services.AddScoped<ITechnicianService, TechnicianServices>();
+/*builder.Services.AddScoped<ITechReviews, TechReviews>();*/
 
 
 //Amo

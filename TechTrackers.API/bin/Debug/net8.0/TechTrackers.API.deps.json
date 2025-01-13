@@ -1579,10 +1579,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "runtime": {
-          "TechTrackers.Data.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "TechTrackers.Data.dll": {}
         }
       },
       "TechTrackers.Service/1.0.0": {
@@ -1594,10 +1591,7 @@
           "TechTrackers.Data": "1.0.0"
         },
         "runtime": {
-          "TechTrackers.Service.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "TechTrackers.Service.dll": {}
         }
       }
     }
