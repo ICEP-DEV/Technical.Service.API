@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using TechTrackers.Data;
+using TechTrackers.Data.Model;
 using TechTrackers.Data.Model.dto;
 
 namespace TechTrackers.Service.ManageLogs
@@ -19,17 +21,37 @@ namespace TechTrackers.Service.ManageLogs
             _dbContext = dbContext;
         }
 
+
+
         public async Task<bool> ChangeLogStatus(int logId, string newStatus)
         {
+            Console.WriteLine($"Received request to change status for log {logId} to {newStatus}");
+
             var log = await _dbContext.Logs.FindAsync(logId);
-            if (log == null) return false;
+            if (log == null)
+            {
+                Console.WriteLine($"Log with ID {logId} not found.");
+                return false;
+            }
 
-            log.LogStatus = newStatus.ToUpper(); // Ensure status is stored consistently
+            log.LogStatus = newStatus;
             log.UpdatedAt = DateTime.UtcNow;
-            await _dbContext.SaveChangesAsync();
 
-            return true;
+            try
+            {
+                await _dbContext.SaveChangesAsync();
+                Console.WriteLine($"Status updated successfully for log {logId}");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Database save failed: {ex.Message}");
+                return false; // Optionally, consider throwing the exception to handle it higher up
+            }
         }
+
+
+
 
         public async Task<bool> CloseLog(int logId)
         {
@@ -92,5 +114,22 @@ namespace TechTrackers.Service.ManageLogs
 
             return true;
         }
+
+        public async Task<Log> GetIssueByIdAsync(int id)
+        {
+            return await _dbContext.Logs.FindAsync(id);
+        }
+
+        /*  public async Task<bool> ChangeLogStatus(int logId, string newStatus)
+         {
+             var log = await _dbContext.Logs.FindAsync(logId);
+             if (log == null) return false;
+
+             log.LogStatus = newStatus.ToUpper(); // Ensure status is stored consistently
+             log.UpdatedAt = DateTime.UtcNow;
+             await _dbContext.SaveChangesAsync();
+
+             return true;
+         }*/
     }
 }

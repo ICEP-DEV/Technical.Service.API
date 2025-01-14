@@ -3,6 +3,9 @@ using TechTrackers.Service;
 using TechTrackers.Data;
 using TechTrackers.Service.Services;
 using TechTrackers.Service.ManageLogs;
+using TechTrackers.Service.TechnicianServicess;
+using TechTrackers.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,9 +21,10 @@ builder.Services.AddDbContext<TechTrackersDbContext>(options => options.UseSqlSe
 builder.Services.AddControllers();
 builder.Services.AddCors(option => option.AddPolicy("corspolicy", builder =>
 {
-    builder.AllowAnyOrigin()
+    builder.WithOrigins("http://localhost:3000", "http://localhost:3001")
     .AllowAnyMethod()
-    .AllowAnyHeader();
+    .AllowAnyHeader()
+    .AllowCredentials();
 }));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -36,9 +40,17 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IOTPService, OTPService>();
 builder.Services.AddScoped<IUserService, UserOtpService>();
 builder.Services.AddHostedService<SLAMonitoringService>();
-builder.Services.AddScoped<TechnicianService>();
+/*builder.Services.AddScoped<TechnicianService>();*/
 //
 builder.Services.AddScoped<IManageLogs, ManageLogsService>();
+builder.Services.AddScoped<ITechnicianService, TechnicianServices>();
+/*builder.Services.AddScoped<ITechReviews, TechReviews>();*/
+
+
+//Amo
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

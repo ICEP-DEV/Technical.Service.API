@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using TechTrackers.Data.Model.dto;
+using TechTrackers.Service;
 using TechTrackers.Service.ManageLogs;
 
 namespace TechTrackers.API.Controllers
@@ -97,25 +98,106 @@ namespace TechTrackers.API.Controllers
             });
         }
 
+        /*   [HttpPut("{logId}/{newStatus}")]
+           public async Task<IActionResult> ChangeLogStatus(int logId, string newStatus)
+           {
+               var success = await _manageLogs.ChangeLogStatus(logId, newStatus);
+               if (!success)
+               {
+                   return NotFound(new RespondWrapper
+                   {
+                       IsSuccess = false,
+                       Message = $"Log with ID {logId} not found."
+                   });
+               }
+
+               return Ok(new RespondWrapper
+               {
+                   IsSuccess = true,
+                   Message = $"Log with ID {logId} status changed to '{newStatus}' successfully."
+               });
+           }*/
         [HttpPut("{logId}/{newStatus}")]
         public async Task<IActionResult> ChangeLogStatus(int logId, string newStatus)
         {
-            var success = await _manageLogs.ChangeLogStatus(logId, newStatus);
-            if (!success)
+            try
             {
-                return NotFound(new RespondWrapper
+                var success = await _manageLogs.ChangeLogStatus(logId, newStatus);
+
+                if (!success)
                 {
-                    IsSuccess = false,
-                    Message = $"Log with ID {logId} not found."
+                    // Log not found, return 404
+                    return NotFound(new RespondWrapper
+                    {
+                        IsSuccess = false,
+                        Message = $"Log with ID {logId} not found."
+                    });
+                }
+
+                // Success response
+                return Ok(new RespondWrapper
+                {
+                    IsSuccess = true,
+                    Message = $"Log with ID {logId} status successfully changed to '{newStatus}'."
                 });
             }
-
-            return Ok(new RespondWrapper
+            catch (ArgumentException ex)
             {
-                IsSuccess = true,
-                Message = $"Log with ID {logId} status changed to '{newStatus}' successfully."
-            });
+                // Invalid status value, return 400 Bad Request
+                return BadRequest(new RespondWrapper
+                {
+                    IsSuccess = false,
+                    Message = ex.Message
+                });
+            }
+            catch (Exception ex)
+            {
+                // Unexpected error, return 500 Internal Server Error
+                return StatusCode(500, new RespondWrapper
+                {
+                    IsSuccess = false,
+                    Message = "An unexpected error occurred.",
+                    Result = ex.Message // Optionally include details for debugging purposes
+                });
+            }
         }
+
+
+        [HttpGet("GetIssue/{id}")]
+        public async Task<IActionResult> GetIssueById(int id)
+        {
+           /* try
+            {
+                var issue = await _manageLogs.GetIssueByIdAsync(id);
+                if (issue == null)
+                {
+                    return NotFound(new { Message = $"Issue with ID {id} not found." });
+                }
+
+                return Ok(issue);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An error occurred.", Details = ex.Message });
+            }*/
+
+            try
+            {
+                var issue = await _manageLogs.GetIssueByIdAsync(id);
+                if (issue == null)
+                {
+                    return NotFound(new { Message = $"Issue with ID {id} not found." });
+                }
+
+                return Ok(issue); // Return issue as JSON
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An error occurred.", Details = ex.Message });
+            }
+        }
+
 
     }
 }
+

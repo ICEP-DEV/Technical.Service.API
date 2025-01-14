@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechTrackers.Data.Model;
 using TechTrackers.Data.Model.dto;
 
 namespace TechTrackers.Service.ManageLogs
@@ -15,5 +16,8 @@ namespace TechTrackers.Service.ManageLogs
         Task<bool> OpenLog(int logId);
         Task<bool> CloseLog(int logId);
         Task<bool> ChangeLogStatus(int logId, string newStatus);
+
+        Task<Log> GetIssueByIdAsync(int id);
+
     }
 }

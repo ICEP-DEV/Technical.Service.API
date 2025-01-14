@@ -35,5 +35,28 @@ namespace TechTrackers.Service
                 .ToListAsync(); // Ensure ToListAsync() is here to execute the query asynchronously
         }
 
+        public async Task NotifyTechnicianAssignmentAsync(int assignedTechnicianId, Log log, LogDto logDto, User adminUser)
+        {
+            // Notify the technician about the assignment
+            var assignedTechnician = await _dbContext.Users
+                .FirstOrDefaultAsync(u => u.UserId == assignedTechnicianId);
+
+            if (assignedTechnician != null)
+            {
+                var notificationForTechnician = new Notification
+                {
+                    LogId = log.LogId,
+                    UserId = assignedTechnician.UserId, // Notify the assigned technician
+                    Message = $"Admin ({adminUser.Surname} {adminUser.Initials}) has assigned you to the issue titled: '{logDto.Issue_Title}'.",
+                    Type = "ALERT",
+                    Timestamp = DateTime.Now,
+                    ReadStatus = false
+                };
+
+                await _dbContext.Notifications.AddAsync(notificationForTechnician);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
     }
 }
