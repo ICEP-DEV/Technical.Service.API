@@ -117,12 +117,12 @@ namespace TechTrackers.API.Controllers
                    Message = $"Log with ID {logId} status changed to '{newStatus}' successfully."
                });
            }*/
-        [HttpPut("{logId}/{newStatus}")]
-        public async Task<IActionResult> ChangeLogStatus(int logId, string newStatus)
+        [HttpPut("{issueId}/{newStatus}")]
+        public async Task<IActionResult> ChangeLogStatus(string issueId, string newStatus)
         {
             try
             {
-                var success = await _manageLogs.ChangeLogStatus(logId, newStatus);
+                var success = await _manageLogs.ChangeLogStatus(issueId, newStatus);
 
                 if (!success)
                 {
@@ -130,7 +130,7 @@ namespace TechTrackers.API.Controllers
                     return NotFound(new RespondWrapper
                     {
                         IsSuccess = false,
-                        Message = $"Log with ID {logId} not found."
+                        Message = $"Log with ID {issueId} not found."
                     });
                 }
 
@@ -138,7 +138,7 @@ namespace TechTrackers.API.Controllers
                 return Ok(new RespondWrapper
                 {
                     IsSuccess = true,
-                    Message = $"Log with ID {logId} status successfully changed to '{newStatus}'."
+                    Message = $"Log with ID {issueId} status successfully changed to '{newStatus}'."
                 });
             }
             catch (ArgumentException ex)

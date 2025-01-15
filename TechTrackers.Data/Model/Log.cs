@@ -10,9 +10,15 @@ namespace TechTrackers.Data.Model
 {
     public class Log
     {
+        /*public Log() {         
+            IssueId = string.Empty;
+        }*/
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int LogId { get; set; }
+
+        public string? IssueId { get; set; }
 
         public int UserIssueId { get; set; }
         public string? Description { get; set; }

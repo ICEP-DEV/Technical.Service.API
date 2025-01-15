@@ -119,15 +119,22 @@ namespace TechTrackers.API.Controllers
                     return BadRequest(new { message = "Invalid LogId or TechnicianId." });
                 }
 
+                // Retrieve the log
                 var log = await _dbContext.Logs.Include(l => l.SLA).FirstOrDefaultAsync(l => l.LogId == assignDto.LogId);
                 if (log == null)
                 {
                     return NotFound(new { message = "Log not found." });
                 }
 
+                // Check if a technician is already assigned
+                if (log.TechnicianId.HasValue)
+                {
+                    return BadRequest(new { message = "A technician has already been assigned to this log." });
+                }
+
+                // Assign technician and set dates
                 log.TechnicianId = assignDto.TechnicianId;
                 log.AssignedAt = DateTime.Now;
-
 
                 if (log.SLA != null)
                 {
@@ -138,6 +145,37 @@ namespace TechTrackers.API.Controllers
                 log.UpdatedAt = DateTime.Now;
                 _dbContext.Logs.Update(log);
                 await _dbContext.SaveChangesAsync();
+
+                // Notify the assigned technician
+                var technician = await _dbContext.Users.FirstOrDefaultAsync(u => u.UserId == assignDto.TechnicianId);
+                if (technician != null)
+                {
+                    var resolutionDeadline = log.AssignedAt.AddMinutes(log.SLA?.ResolutionTimeframe ?? 0);
+                    var notification = new Notification
+                    {
+                        LogId = log.LogId,
+                        UserId = technician.UserId,
+                        Message = $"You have been assigned to resolve the issue titled: '{log.IssueTitle}'.\n" +
+                                  $"Details:\n" +
+                                  $"- Issue ID: {log.IssueId}\n" +
+                                  $"- Location: {log.Location}\n" +
+                                  $"- Priority: {log.Priority}\n" +
+                                  $"- Resolution Deadline: {resolutionDeadline:yyyy-MM-dd HH:mm}\n\n" +
+                                  "Please ensure this issue is resolved within the specified time frame.",
+                        Type = "ALERT",
+                        Timestamp = DateTime.Now,
+                        ReadStatus = false
+                    };
+
+                    await _dbContext.Notifications.AddAsync(notification);
+                    await _dbContext.SaveChangesAsync();
+
+                    _logger.LogInformation($"Notification sent to technician ID: {technician.UserId}");
+                }
+                else
+                {
+                    _logger.LogWarning($"Technician with ID {assignDto.TechnicianId} not found. Notification skipped.");
+                }
 
                 return Ok(new
                 {
@@ -151,6 +189,8 @@ namespace TechTrackers.API.Controllers
                 return StatusCode(500, new { message = "An internal server error occurred." });
             }
         }
+
+
 
 
         [HttpGet]
@@ -182,6 +222,9 @@ namespace TechTrackers.API.Controllers
                 resolutionDueInSeconds
             });
         }
+
+      
+
         // method to calculate the escalation level
 
         private int CalculateEscalation(Log log, DateTime currentTime)
