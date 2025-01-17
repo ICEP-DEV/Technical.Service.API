@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.api\\controllers\\managelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\managelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +18,114 @@
     {
       "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.api\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\managelogs\\managelogsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\managelogs\\managelogsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\managelogs\\imanagelogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\managelogs\\imanagelogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.api\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.api\\controllers\\assigntechniciancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\assigntechniciancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\assigntechnicianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\assigntechnicianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\technicianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\technicianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\model\\dto\\assigntechniciandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\assigntechniciandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\model\\dto\\assignlogtechniciandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\assignlogtechniciandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\model\\dto\\logdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\logdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\model\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.api\\controllers\\managelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\managelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\model\\dto\\logdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\logdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\migrations\\20250114074237_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\migrations\\20250114074237_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\techtrackersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\techtrackersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\technicianservicess\\itechnicianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\technicianservicess\\itechnicianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\technicianservicess\\technicianservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\technicianservicess\\technicianservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Migrations\\20250113153209_MSecondCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechTrackers.Data\\Migrations\\20250113153209_MSecondCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\technicianservicess\\techreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\technicianservicess\\techreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.api\\controllers\\techcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\techcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.service\\technicianservicess\\itechreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\technicianservicess\\itechreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\model\\technician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\technician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.api\\controllers\\technicianhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\technicianhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.data\\model\\dto\\respondwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\respondwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.api\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\222883750\\source\\repos\\new folder\\techtrackers.api\\controllers\\cruddepartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\cruddepartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 9454989f50ce211feda02a15c2dbea01e218f041
     }
   ],
   "DocumentGroupContainers": [
@@ -26,6 +135,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -43,10 +153,26 @@
               "ViewState": "AgIAANUAAAAAAAAAAAAIwOsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T12:25:18.995Z",
+=======
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogService.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\LogService.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\LogService.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\LogService.cs*",
+              "RelativeToolTip": "TechTrackers.Service\\LogService.cs*",
+              "ViewState": "AQIAAFABAAAAAAAAAAAAAFABAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T12:36:56.942Z",
+>>>>>>> 9454989f50ce211feda02a15c2dbea01e218f041
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "ManageLogsService.cs",
               "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
@@ -57,11 +183,35 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T02:50:32.322Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 8,
+              "Title": "AssignTechnicianDto.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\AssignTechnicianDto.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\dto\\AssignTechnicianDto.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\AssignTechnicianDto.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\dto\\AssignTechnicianDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T14:04:52.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250113153209_MSecondCreate.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Migrations\\20250113153209_MSecondCreate.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Migrations\\20250113153209_MSecondCreate.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Migrations\\20250113153209_MSecondCreate.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Migrations\\20250113153209_MSecondCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T15:32:10.798Z"
+>>>>>>> 9454989f50ce211feda02a15c2dbea01e218f041
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "LogController.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Controllers\\LogController.cs",
               "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\LogController.cs",
               "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Controllers\\LogController.cs",
@@ -69,10 +219,20 @@
               "ViewState": "AgIAAL4AAAAAAAAAAADwv98AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T02:45:56.056Z",
+=======
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\LogController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\LogController.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\LogController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\LogController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T15:30:10.877Z",
+>>>>>>> 9454989f50ce211feda02a15c2dbea01e218f041
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "IManageLogs.cs",
               "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
@@ -83,6 +243,283 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T12:25:02.339Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Program.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Program.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Program.cs",
+              "RelativeToolTip": "TechTrackers.API\\Program.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAYwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T13:53:40.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IManageLogs.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
+              "RelativeToolTip": "TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA6wBEAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T07:55:37.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageLogsService.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
+              "RelativeToolTip": "TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAwwCAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T14:00:18.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AssignTechnicianController.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\AssignTechnicianController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\AssignTechnicianController.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\AssignTechnicianController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\AssignTechnicianController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:00:27.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250114074237_FirstMigration.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Migrations\\20250114074237_FirstMigration.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Migrations\\20250114074237_FirstMigration.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Migrations\\20250114074237_FirstMigration.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Migrations\\20250114074237_FirstMigration.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAgwHoAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T07:42:45.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ITechnicianService.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianServicess\\ITechnicianService.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\TechnicianServicess\\ITechnicianService.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianServicess\\ITechnicianService.cs",
+              "RelativeToolTip": "TechTrackers.Service\\TechnicianServicess\\ITechnicianService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T06:19:40.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TechnicianServices.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianServicess\\TechnicianServices.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\TechnicianServicess\\TechnicianServices.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianServicess\\TechnicianServices.cs",
+              "RelativeToolTip": "TechTrackers.Service\\TechnicianServicess\\TechnicianServices.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T06:20:42.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ITechReviews.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianServicess\\ITechReviews.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\TechnicianServicess\\ITechReviews.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianServicess\\ITechReviews.cs",
+              "RelativeToolTip": "TechTrackers.Service\\TechnicianServicess\\ITechReviews.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T08:36:34.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TechReviews.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianServicess\\TechReviews.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\TechnicianServicess\\TechReviews.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianServicess\\TechReviews.cs",
+              "RelativeToolTip": "TechTrackers.Service\\TechnicianServicess\\TechReviews.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T08:37:01.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TechController.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\TechController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\TechController.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\TechController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\TechController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T06:32:36.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\Log.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\Log.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\Log.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\Log.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAYwBYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T11:44:02.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LogDto.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\LogDto.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\dto\\LogDto.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\LogDto.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\dto\\LogDto.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwA8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T11:43:29.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Technician.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\Technician.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\Technician.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\Technician.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\Technician.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T08:42:29.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TechnicianService.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianService.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\TechnicianService.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\TechnicianService.cs",
+              "RelativeToolTip": "TechTrackers.Service\\TechnicianService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T12:56:35.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssignLogTechnicianDto.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\AssignLogTechnicianDto.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\dto\\AssignLogTechnicianDto.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\AssignLogTechnicianDto.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\dto\\AssignLogTechnicianDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T06:00:13.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManageLogsController.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\ManageLogsController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\ManageLogsController.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\ManageLogsController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\ManageLogsController.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAqwHUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T14:03:47.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LogDetailDto.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\LogDetailDto.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\dto\\LogDetailDto.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\LogDetailDto.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\dto\\LogDetailDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T11:43:14.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TechnicianHandler.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\TechnicianHandler.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\TechnicianHandler.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\TechnicianHandler.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\TechnicianHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T12:56:44.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TechTrackersDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\TechTrackersDbContext.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\TechTrackersDbContext.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\TechTrackersDbContext.cs",
+              "RelativeToolTip": "TechTrackers.Data\\TechTrackersDbContext.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T08:11:32.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssignTechnicianService.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\AssignTechnicianService.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\AssignTechnicianService.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Service\\AssignTechnicianService.cs",
+              "RelativeToolTip": "TechTrackers.Service\\AssignTechnicianService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T06:10:53.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RespondWrapper.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\RespondWrapper.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\dto\\RespondWrapper.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.Data\\Model\\dto\\RespondWrapper.cs",
+              "RelativeToolTip": "TechTrackers.Data\\Model\\dto\\RespondWrapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T08:43:04.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\FeedbackController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowBgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:01:56.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CRUDDepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\CRUDDepartmentController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\CRUDDepartmentController.cs",
+              "ToolTip": "C:\\Users\\222883750\\source\\repos\\New folder\\TechTrackers.API\\Controllers\\CRUDDepartmentController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\CRUDDepartmentController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAcwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T08:13:55.671Z"
+>>>>>>> 9454989f50ce211feda02a15c2dbea01e218f041
             }
           ]
         }

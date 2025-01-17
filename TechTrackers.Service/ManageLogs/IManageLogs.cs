@@ -15,7 +15,7 @@ namespace TechTrackers.Service.ManageLogs
         Task<IEnumerable<LogDetailDto>> GetOpenLogsAsync();
         Task<bool> OpenLog(int logId);
         Task<bool> CloseLog(int logId);
-        Task<bool> ChangeLogStatus(int logId, string newStatus);
+        Task<bool> ChangeLogStatus(string issueId, string newStatus);
 
         Task<Log> GetIssueByIdAsync(int id);
 

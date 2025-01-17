@@ -25,6 +25,13 @@ namespace TechTrackers.Service
             var initials = string.Join("", departmentName.Split(' ').Select(word => word[0])).ToUpper();
             return $"{initials}-{userIssueId:D4}";
         }
+
+        private int GenerateRandomNumber()
+        {
+            var random = new Random();
+            return random.Next(1000, 9999); // Generates a random number between 1000 and 9999
+        }
+
         public async Task<IEnumerable<LogDetailDto>> GetAllLogsAsync(int? userId, bool isTechnician)
         {
 
@@ -55,7 +62,7 @@ namespace TechTrackers.Service
                 // Transform the data after fetching it
                 var logDetails = logs.Select(log => new LogDetailDto
                 {
-                    IssueId = GetDepartmentInitials(log.Staff?.Department?.DepartmentName, log.UserIssueId),
+                    IssueId = log.IssueId,
                     CategoryName = log.Category?.CategoryName,
                     IssuedAt = log.CreatedAt.ToString("yyyy-MM-dd hh:mm tt"),
                     Priority = log.Priority,
@@ -102,31 +109,41 @@ namespace TechTrackers.Service
                 byte[]? fileData = null;
                 if (logDto.AttachmentFile != null)
                 {
-                    Console.WriteLine($"Received file with name: {logDto.AttachmentFile.FileName}");
                     using (var ms = new MemoryStream())
                     {
                         await logDto.AttachmentFile.CopyToAsync(ms);
                         fileData = ms.ToArray();
                     }
                 }
-                else
-                {
-                    Console.WriteLine("No file received in the request.");
-                }
 
-                // Finding the highest UserIssueId for the current User
+                // Finding the highest UserIssueId for the current user (staff)
                 var maxUserIssuedId = await _dbContext.Logs
                     .Where(l => l.StaffId == logDto.Staff_ID)
                     .MaxAsync(l => (int?)l.UserIssueId) ?? 0;
 
-                // Setting the new UserIssueId to be max + 1
+                // Increment UserIssueId
                 var newUserIssueId = maxUserIssuedId + 1;
 
-                // Log SLA lookup success
-                Console.WriteLine($"SLA found: SLA_ID = {sla.SLAId}, Response_Time = {sla.ResponseTimeframe}, Resolution_Time = {sla.ResolutionTimeframe}");
+                // Retrieve department details using StaffId
+                var staff = await _dbContext.Users
+                    .Include(u => u.Department)
+                    .FirstOrDefaultAsync(u => u.UserId == logDto.Staff_ID);
+
+                if (staff?.Department == null)
+                {
+                    throw new Exception($"Department not found for staff ID: {logDto.Staff_ID}.");
+                }
+
+                // Generate the IssueId dynamically
+                string createdIssueId = GetDepartmentInitials(staff.Department.DepartmentName, GenerateRandomNumber());
+                var newIssueId = $"{createdIssueId}";
+
+                // Log IssueId generation for debugging purposes
+                Console.WriteLine($"Generated IssueId: {newIssueId}");
 
                 var log = new Log
                 {
+                    IssueId = newIssueId, // Assign the generated IssueId
                     UserIssueId = newUserIssueId,
                     IssueTitle = logDto.Issue_Title,
                     Description = logDto.Description,
@@ -144,43 +161,30 @@ namespace TechTrackers.Service
                 await _dbContext.Logs.AddAsync(log);
                 await _dbContext.SaveChangesAsync();
 
-                // Notify the staff member who logged the issue
+                // Notify the staff member
                 var notificationForStaff = new Notification
                 {
                     LogId = log.LogId,
-                    UserId = log.StaffId, // Notify the staff member
-                    Message = $"Your issue has been logged successfully with reference ID: {GetDepartmentInitials(logDto.Department, log.LogId)}",
+                    UserId = log.StaffId,
+                    Message = $"Your issue has been logged successfully with reference ID: {newIssueId}.",
                     Type = "INFORMATION",
                     Timestamp = DateTime.Now,
                     ReadStatus = false
                 };
                 await _dbContext.Notifications.AddAsync(notificationForStaff);
 
-                var staffMember = await _dbContext.Users
-                             .FirstOrDefaultAsync(u => u.UserId == logDto.Staff_ID);
-
-                if (staffMember != null)
-                {
-                    var staffInitials = $"{staffMember.Initials}"; // Assuming 'Initials' is a property of the 'User' model
-                }
-                else
-                {
-                    var staffInitials = "Unknown"; // Fallback in case the user is not found
-                }
-
-                // Notify admin(s) about the logged issue
+                // Notify admins about the logged issue
                 var adminUsers = await _dbContext.Users
-                         .Where(u => u.Role.RoleName == "Admin") // Assuming Role is a navigation property
-                         .ToListAsync();
-
+                    .Where(u => u.Role.RoleName == "Admin")
+                    .ToListAsync();
 
                 foreach (var admin in adminUsers)
                 {
                     var notificationForAdmin = new Notification
                     {
                         LogId = log.LogId,
-                        UserId = admin.UserId, // Notify each admin
-                        Message = $"Staff member ({staffMember.Surname + " "+staffMember.Initials} ) has logged a new issue titled: '{logDto.Issue_Title}'.",
+                        UserId = admin.UserId,
+                        Message = $"Staff member {staff.Initials} {staff.Surname} has logged a new issue titled: '{logDto.Issue_Title}'.",
                         Type = "ALERT",
                         Timestamp = DateTime.Now,
                         ReadStatus = false
@@ -190,11 +194,11 @@ namespace TechTrackers.Service
 
                 await _dbContext.SaveChangesAsync();
 
-                // Log success
-                Console.WriteLine($"Log successfully created with UserIssueId: {log.UserIssueId}");
-
+                Console.WriteLine($"Log successfully created with IssueId: {newIssueId}");
                 return log;
             }
+
+
             catch (Exception ex)
             {
                 Console.WriteLine($"Error creating log: {ex.Message}");
@@ -205,6 +209,85 @@ namespace TechTrackers.Service
                 throw new Exception("Failed to log issue due to server error.", ex);
             }
         }
+
+
+        /*  public async Task<Log> LogIssue(LogDto logDto)
+          {
+              try
+              {
+                  // Retrieve the SLA based on the priority level
+                  var sla = await _dbContext.SLAs
+                      .FirstOrDefaultAsync(s => s.PriorityLevel == logDto.Priority);
+
+                  if (sla == null)
+                  {
+                      throw new Exception($"SLA not found for the selected priority level: {logDto.Priority}.");
+                  }
+
+                  byte[]? fileData = null;
+                  if (logDto.AttachmentFile != null)
+                  {
+                      using (var ms = new MemoryStream())
+                      {
+                          await logDto.AttachmentFile.CopyToAsync(ms);
+                          fileData = ms.ToArray();
+                      }
+                  }
+
+                  // Finding the highest UserIssueId for the current User
+                  var maxUserIssuedId = await _dbContext.Logs
+                      .Where(l => l.StaffId == logDto.Staff_ID)
+                      .MaxAsync(l => (int?)l.UserIssueId) ?? 0;
+
+                  var newUserIssueId = maxUserIssuedId + 1;
+
+                  // Retrieve the staff and department name
+                  var staffWithDepartment = await _dbContext.Logs
+                      .Include(u => u.Staff)
+                      .ThenInclude(s => s.Department)
+                      .FirstOrDefaultAsync(u => u.UserIssueId == logDto.Staff_ID);
+
+                  if (staffWithDepartment?.Staff?.Department?.DepartmentName == null)
+                  {
+                      throw new Exception($"Department not found for Staff ID: {logDto.Staff_ID}");
+                  }
+
+                  var departmentName = staffWithDepartment.Staff.Department.DepartmentName;
+                  Console.WriteLine($"Department Name: {departmentName}");
+
+                  var log = new Log
+                  {
+                      IssueId = GetDepartmentInitials(departmentName, newUserIssueId),
+                      UserIssueId = newUserIssueId,
+                      IssueTitle = logDto.Issue_Title,
+                      Description = logDto.Description,
+                      Priority = logDto.Priority ?? "MEDIUM",
+                      Location = logDto.Location ?? "Not specified",
+                      CategoryId = logDto.Category_ID,
+                      LogStatus = logDto.LogStatus = "PENDING",
+                      AttachmentFile = fileData,
+                      StaffId = logDto.Staff_ID,
+                      CreatedAt = DateTime.Now,
+                      UpdatedAt = DateTime.Now,
+                      SLAId = sla.SLAId
+                  };
+
+                  await _dbContext.Logs.AddAsync(log);
+                  await _dbContext.SaveChangesAsync();
+
+                  Console.WriteLine($"Log successfully created with IssueId: {log.IssueId}");
+
+                  return log;
+              }
+              catch (Exception ex)
+              {
+                  Console.WriteLine($"Error creating log: {ex.Message}");
+                  throw new Exception("Failed to log issue.", ex);
+              }
+          }*/
+
+
+
 
 
 
@@ -250,6 +333,10 @@ namespace TechTrackers.Service
                 throw new Exception("Failed to retrieve notifications due to server error.", ex);
             }
         }
+
+      
+
+
 
         /* return await _dbContext.Logs
             .Include(log => log.Technician) // Include the Technician (user with a technician role)
