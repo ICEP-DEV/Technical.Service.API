@@ -78,6 +78,85 @@
     ]
   },
   {
+    "ContainingType": "TechTrackers.API.Controllers.CRUDDepartmentController",
+    "Method": "AddDepartment",
+    "RelativePath": "api/CRUDDepartment/AddDepartment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentDto",
+        "Type": "TechTrackers.Data.Model.dto.DepartmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.CRUDDepartmentController",
+    "Method": "DeleteDepartment",
+    "RelativePath": "api/CRUDDepartment/DeleteDepartment/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.CRUDDepartmentController",
+    "Method": "GetAllDepartments",
+    "RelativePath": "api/CRUDDepartment/GetAllDepartments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.CRUDDepartmentController",
+    "Method": "GetDepartmentById",
+    "RelativePath": "api/CRUDDepartment/GetDepartmentById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.CRUDDepartmentController",
+    "Method": "UpdateDepartment",
+    "RelativePath": "api/CRUDDepartment/UpdateDepartment/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "departmentDto",
+        "Type": "TechTrackers.Data.Model.dto.DepartmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TechTrackers.API.Controllers.FeedbackController",
     "Method": "GetFeedbackByLog",
     "RelativePath": "api/Feedback/GetFeedbackByLog/{logId}",
@@ -278,7 +357,7 @@
   {
     "ContainingType": "TechTrackers.API.Controllers.ManageLogsController",
     "Method": "ChangeLogStatus",
-    "RelativePath": "api/ManageLogs/ChangeLogStatus/{logId}/{newStatus}",
+    "RelativePath": "api/ManageLogs/ChangeLogStatus/{issueId}/{newStatus}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -286,11 +365,16 @@
       {
         "Name": "logId",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "newStatus",
         "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "issueId",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -333,6 +417,22 @@
       {
         "Name": "status",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.ManageLogsController",
+    "Method": "GetIssueById",
+    "RelativePath": "api/ManageLogs/GetIssueById/GetIssue/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -390,6 +490,70 @@
     "Parameters": [
       {
         "Name": "notificationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.TechController",
+    "Method": "CountInProgressLogs",
+    "RelativePath": "api/Tech/CountInProgressLogs/{technicianId}/countInProgress",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "technicianId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.TechController",
+    "Method": "CountOnHoldLogs",
+    "RelativePath": "api/Tech/CountOnHoldLogs/{technicianId}/countOnHold",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "technicianId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.TechController",
+    "Method": "CountPendingLogs",
+    "RelativePath": "api/Tech/CountPendingLogs/{technicianId}/countPending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "technicianId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.TechController",
+    "Method": "CountResolvedLogs",
+    "RelativePath": "api/Tech/CountResolvedLogs/{technicianId}/countResolved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "technicianId",
         "Type": "System.Int32",
         "IsRequired": true
       }

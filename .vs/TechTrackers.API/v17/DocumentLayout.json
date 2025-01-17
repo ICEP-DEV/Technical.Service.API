@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.api\\controllers\\managelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\managelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.data\\model\\dto\\techniciandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\techniciandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.service\\managelogs\\managelogsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\managelogs\\managelogsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.service\\technicianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\technicianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.service\\managelogs\\imanagelogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B50F0A-749C-4801-AEED-3CC6D0F064C7}|TechTrackers.Service\\TechTrackers.Service.csproj|solutionrelative:techtrackers.service\\managelogs\\imanagelogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.data\\model\\dto\\techniciancreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\dto\\techniciancreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.api\\controllers\\technicianhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\technicianhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.data\\model\\technician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ABC6BDA-FAFC-4BB4-AB0E-0226C798EA8A}|TechTrackers.Data\\TechTrackers.Data.csproj|solutionrelative:techtrackers.data\\model\\technician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|c:\\users\\ezram\\documents\\newtechtrackers.apis\\techtrackers.api\\techtrackers.api\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D9980A-7F18-4C2F-A151-26FD43E23779}|TechTrackers.API\\TechTrackers.API.csproj|solutionrelative:techtrackers.api\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Program.cs",
-              "RelativeDocumentMoniker": "TechTrackers.API\\Program.cs",
-              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Program.cs",
-              "RelativeToolTip": "TechTrackers.API\\Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACYAAAAwAAAAAAAAAA==",
+              "Title": "ManageLogsController.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Controllers\\ManageLogsController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\ManageLogsController.cs",
+              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Controllers\\ManageLogsController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\ManageLogsController.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAIwOsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:38:05.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TechnicianHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Controllers\\TechnicianHandler.cs",
-              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\TechnicianHandler.cs",
-              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Controllers\\TechnicianHandler.cs",
-              "RelativeToolTip": "TechTrackers.API\\Controllers\\TechnicianHandler.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:31:35.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TechnicianCreateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\Model\\dto\\TechnicianCreateDTO.cs",
-              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\dto\\TechnicianCreateDTO.cs",
-              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\Model\\dto\\TechnicianCreateDTO.cs",
-              "RelativeToolTip": "TechTrackers.Data\\Model\\dto\\TechnicianCreateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:28:05.484Z",
+              "WhenOpened": "2025-01-14T12:25:18.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TechnicianDto.cs",
-              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\Model\\dto\\TechnicianDto.cs",
-              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\dto\\TechnicianDto.cs",
-              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\Model\\dto\\TechnicianDto.cs",
-              "RelativeToolTip": "TechTrackers.Data\\Model\\dto\\TechnicianDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
+              "Title": "ManageLogsService.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
+              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
+              "RelativeToolTip": "TechTrackers.Service\\ManageLogs\\ManageLogsService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAHIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:27:11.261Z",
+              "WhenOpened": "2025-01-15T02:50:32.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Technician.cs",
-              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\Model\\Technician.cs",
-              "RelativeDocumentMoniker": "TechTrackers.Data\\Model\\Technician.cs",
-              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Data\\Model\\Technician.cs",
-              "RelativeToolTip": "TechTrackers.Data\\Model\\Technician.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "LogController.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Controllers\\LogController.cs",
+              "RelativeDocumentMoniker": "TechTrackers.API\\Controllers\\LogController.cs",
+              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.API\\Controllers\\LogController.cs",
+              "RelativeToolTip": "TechTrackers.API\\Controllers\\LogController.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAADwv98AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:16:54.375Z",
+              "WhenOpened": "2025-01-15T02:45:56.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TechnicianService.cs",
-              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\TechnicianService.cs",
-              "RelativeDocumentMoniker": "TechTrackers.Service\\TechnicianService.cs",
-              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\TechnicianService.cs",
-              "RelativeToolTip": "TechTrackers.Service\\TechnicianService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwIsAAAAAAAAAAAAAAA==",
+              "Title": "IManageLogs.cs",
+              "DocumentMoniker": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
+              "RelativeDocumentMoniker": "TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
+              "ToolTip": "C:\\Users\\ezram\\Documents\\NewTechtrackers.APIs\\Techtrackers.API\\TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
+              "RelativeToolTip": "TechTrackers.Service\\ManageLogs\\IManageLogs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:16:22.785Z",
+              "WhenOpened": "2025-01-14T12:25:02.339Z",
               "EditorCaption": ""
             }
           ]

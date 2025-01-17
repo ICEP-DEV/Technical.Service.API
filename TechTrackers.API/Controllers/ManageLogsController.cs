@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using System.Drawing.Text;
+using System.Text.RegularExpressions;
 using TechTrackers.Data.Model.dto;
 using TechTrackers.Service;
 using TechTrackers.Service.ManageLogs;
@@ -120,6 +122,36 @@ namespace TechTrackers.API.Controllers
         [HttpPut("{logId}/{newStatus}")]
         public async Task<IActionResult> ChangeLogStatus(int logId, string newStatus)
         {
+            /*//Here i am extracting LogId from issueId
+            var logId = ExtractLogId(issueId);
+            if (logId == null)
+            {
+                return BadRequest(new { message = "Invalid issueId format." });
+            }
+
+            var success = await _manageLogs.ChangeLogStatus(logId.Value, newStatus);
+
+            if (!success)
+            {
+                return NotFound(new { message = $"Log with ID {issueId} not found." });
+            }
+
+            return Ok(new { message = $"Log with ID {issueId} status successfully changed to '{newStatus}'. " });*/
+            Console.WriteLine($"Received request: logId = {logId}, newStatus = {newStatus}");
+            newStatus = newStatus.ToUpper();
+
+            var validStatuses = new[] { "PENDING", "INPROGRESS", "ONHOLD", "RESOLVED" };
+
+            if (!validStatuses.Contains(newStatus))
+            {
+                // Return a Bad Request response if the status is invalid
+                return BadRequest(new RespondWrapper
+                {
+                    IsSuccess = false,
+                    Message = $"Invalid status value: {newStatus}. Valid statuses are: {string.Join(", ", validStatuses)}."
+                });
+            }
+
             try
             {
                 var success = await _manageLogs.ChangeLogStatus(logId, newStatus);
@@ -127,6 +159,7 @@ namespace TechTrackers.API.Controllers
                 if (!success)
                 {
                     // Log not found, return 404
+                    Console.WriteLine($"Log not found: {logId}");
                     return NotFound(new RespondWrapper
                     {
                         IsSuccess = false,
@@ -135,6 +168,7 @@ namespace TechTrackers.API.Controllers
                 }
 
                 // Success response
+                Console.WriteLine($"Status updated: logId = {logId}, newStatus = {newStatus}");
                 return Ok(new RespondWrapper
                 {
                     IsSuccess = true,
@@ -153,6 +187,7 @@ namespace TechTrackers.API.Controllers
             catch (Exception ex)
             {
                 // Unexpected error, return 500 Internal Server Error
+                Console.WriteLine($"Unexpected error: {ex.Message}");
                 return StatusCode(500, new RespondWrapper
                 {
                     IsSuccess = false,
@@ -161,6 +196,15 @@ namespace TechTrackers.API.Controllers
                 });
             }
         }
+        /*private int? ExtractLogId(string issueId)
+        {
+            var match = Regex.Match(issueId, @"-(\d+)$");
+            if (match.Success && int.TryParse(match.Groups[1].Value, out var logId))
+            {
+                return logId;
+            }
+            return null;
+        }*/
 
 
         [HttpGet("GetIssue/{id}")]
