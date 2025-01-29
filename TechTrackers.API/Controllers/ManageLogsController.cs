@@ -137,7 +137,7 @@ namespace TechTrackers.API.Controllers
             }
 
             return Ok(new { message = $"Log with ID {issueId} status successfully changed to '{newStatus}'. " });*/
-            Console.WriteLine($"Received request: logId = {logId}, newStatus = {newStatus}");
+            Console.WriteLine($"Received request: logId = {issueId}, newStatus = {newStatus}");
             newStatus = newStatus.ToUpper();
 
             var validStatuses = new[] { "PENDING", "INPROGRESS", "ONHOLD", "RESOLVED" };
@@ -159,7 +159,7 @@ namespace TechTrackers.API.Controllers
                 if (!success)
                 {
                     // Log not found, return 404
-                    Console.WriteLine($"Log not found: {logId}");
+                    Console.WriteLine($"Log not found: {issueId}");
                     return NotFound(new RespondWrapper
                     {
                         IsSuccess = false,
@@ -168,7 +168,7 @@ namespace TechTrackers.API.Controllers
                 }
 
                 // Success response
-                Console.WriteLine($"Status updated: logId = {logId}, newStatus = {newStatus}");
+                Console.WriteLine($"Status updated: logId = {issueId}, newStatus = {newStatus}");
                 return Ok(new RespondWrapper
                 {
                     IsSuccess = true,

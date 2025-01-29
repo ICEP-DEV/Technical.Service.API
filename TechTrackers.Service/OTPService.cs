@@ -51,10 +51,23 @@ namespace TechTrackers.Service
             }
 
             // Mark OTP as used
-            storedOtp.IsValid = false;
-            await _context.SaveChangesAsync();
+            /*storedOtp.IsValid = false;
+            await _context.SaveChangesAsync();*/
 
             return true;
+        }
+
+        public async Task InvalidateOtp(string email, string otp)
+        {
+            var storedOtp = await _context.User_Otps
+                .Where(o => o.UserEmail == email && o.OtpCode == otp && o.IsValid)
+                .FirstOrDefaultAsync();
+
+            if (storedOtp != null)
+            {
+                storedOtp.IsValid = false;
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }

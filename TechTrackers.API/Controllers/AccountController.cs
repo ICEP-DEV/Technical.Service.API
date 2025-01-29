@@ -46,9 +46,17 @@ namespace TechTrackers.API.Controllers
                 return StatusCode(500, "An internal server error occured");
 
             }
+        }
 
+        // 2. Verify OTP only (optional if you want a separate verify step)
+        [HttpPost("verify-otp")]
+        public async Task<IActionResult> VerifyOtp([FromBody] VerifyOtpDto dto)
+        {
+            var isOtpValid = await _otpService.ValidateOtp(dto.Email, dto.Otp);
+            if (!isOtpValid)
+                return BadRequest("Invalid or expired OTP");
 
-
+            return Ok("OTP is valid. Proceed to the next step..");
         }
 
         // This is a step 2: Verify OTP and Reset Password
@@ -75,6 +83,7 @@ namespace TechTrackers.API.Controllers
             }
 
             await _userService.ResetPassword(user, dto.NewPassword);
+            await _otpService.InvalidateOtp(dto.Email, dto.Otp);
             return Ok("Password has been reset successfully.");
 
         }

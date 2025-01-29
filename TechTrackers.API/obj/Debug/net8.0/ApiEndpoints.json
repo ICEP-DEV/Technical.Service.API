@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TechTrackers.API.Controllers.AccountController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/Account/VerifyOtp/verify-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TechTrackers.Data.Model.dto.VerifyOtpDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TechTrackers.API.Controllers.AdminLogController",
     "Method": "GetAdminLoggedIssues",
     "RelativePath": "api/AdminLog/GetAdminLoggedIssues/GetAdminLoggedIssues/admin/{adminId}",
@@ -76,6 +92,59 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.CollabController",
+    "Method": "GetCollaborationRequests",
+    "RelativePath": "api/Collaboration/GetRequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "technicianId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.CollabController",
+    "Method": "RequestCollaboration",
+    "RelativePath": "api/Collaboration/Request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "TechTrackers.Data.Model.dto.CollabRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTrackers.API.Controllers.CollabController",
+    "Method": "RespondToCallaboration",
+    "RelativePath": "api/Collaboration/Respond/{collaborationId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collaborationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "responseDto",
+        "Type": "TechTrackers.Data.Model.CollaborationRequests",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "TechTrackers.API.Controllers.CRUDDepartmentController",
@@ -363,18 +432,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "logId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "newStatus",
+        "Name": "issueId",
         "Type": "System.String",
         "IsRequired": true
       },
       {
-        "Name": "issueId",
-        "Type": "",
+        "Name": "newStatus",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

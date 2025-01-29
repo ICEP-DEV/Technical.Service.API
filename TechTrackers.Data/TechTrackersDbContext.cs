@@ -20,6 +20,7 @@ namespace TechTrackers.Data
         public DbSet<UserRole> User_Roles { get; set; }
         public DbSet<UserOtp> User_Otps { get; set; }
         public DbSet<Technician> Technicians { get; set; }  
+        public DbSet<CollaborationRequests> CollaborationRequests { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
